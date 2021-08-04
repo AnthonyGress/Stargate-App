@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS space_db;
+CREATE DATABASE space_db;
