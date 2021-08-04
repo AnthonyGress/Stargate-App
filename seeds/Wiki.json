@@ -1,0 +1,50 @@
+// https://en.wikipedia.org/api/rest_v1/page/summary/{title}
+{
+  "type": "standard",
+  "title": "Earth",
+  "displaytitle": "Earth",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q2",
+  "titles": {
+    "canonical": "Earth",
+    "normalized": "Earth",
+    "display": "Earth"
+  },
+  "pageid": 9228,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/320px-The_Earth_seen_from_Apollo_17.jpg",
+    "width": 320,
+    "height": 320
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg",
+    "width": 3000,
+    "height": 3002
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1035827706",
+  "tid": "b7ad0800-ef29-11eb-8aa6-ebdefcfa0505",
+  "timestamp": "2021-07-27T22:26:16Z",
+  "description": "Third planet from the Sun in the Solar System",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Earth",
+      "revisions": "https://en.wikipedia.org/wiki/Earth?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Earth?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Earth"
+    },
+    "mobile": {
+      "page": "https://en.m.wikipedia.org/wiki/Earth",
+      "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Earth",
+      "edit": "https://en.m.wikipedia.org/wiki/Earth?action=edit",
+      "talk": "https://en.m.wikipedia.org/wiki/Talk:Earth"
+    }
+  },
+  "extract": "Earth is the third planet from the Sun and the only astronomical object known to harbor and support life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater, which together constitute the hydrosphere. Much of Earth's polar regions are covered in ice. Earth's outer layer is divided into several rigid tectonic plates that migrate across the surface over many millions of years, while its interior remains active with a solid iron inner core, a liquid outer core that generates Earth's magnetic field, and a convective mantle that drives plate tectonics.",
+  "extract_html": "<p><b>Earth</b> is the third planet from the Sun and the only astronomical object known to harbor and support life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater, which together constitute the hydrosphere. Much of Earth's polar regions are covered in ice. Earth's outer layer is divided into several rigid tectonic plates that migrate across the surface over many millions of years, while its interior remains active with a solid iron inner core, a liquid outer core that generates Earth's magnetic field, and a convective mantle that drives plate tectonics.</p>"
+}
