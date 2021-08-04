@@ -1,0 +1,33 @@
+<section class="row justify-content-center">
+  <form class="comment-form col-lg-12">
+    <div class="">
+      <div class="card bg-secondary align-items-center">
+        <div class="form-group w-75 my-3">
+          <label for="leave-comment">Comment</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend">
+                <i class="bi bi-chat-text-fill fs-4"></i>
+              </span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="leave-comment"
+              placeholder="Say something..."
+              aria-describedby="inputGroupPrepend"
+              required
+            />
+          </div>
+          <div class="invalid-feedback">
+            Please enter a valid comment.
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-success btn-lg btn-block mb-3"
+        >Send</button>
+      </div>
+    </div>
+  </form>
+</section>

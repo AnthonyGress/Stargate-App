@@ -16,29 +16,29 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/edit-post/:id", async (req, res) => {
-  try {
-    const dbPostData = await Post.findByPk(req.params.id);
-    const postInfo = dbPostData.dataValues;
-    res.render("edit-post", {
-      postInfo,
-      layout: "dashboard.handlebars",
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
+// router.get("/edit-post/:id", async (req, res) => {
+//   try {
+//     const dbPostData = await Post.findByPk(req.params.id);
+//     const postInfo = dbPostData.dataValues;
+//     res.render("edit-post", {
+//       postInfo,
+//       layout: "dashboard.handlebars",
+//       loggedIn: req.session.loggedIn,
+//     });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 
-router.get("/new-post", async (req, res) => {
-  try {
-    // TODO call helper to pull user info and display it on page
-    res.render("new-post", { loggedIn: req.session.loggedIn });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
+// router.get("/new-post", async (req, res) => {
+//   try {
+//     // TODO call helper to pull user info and display it on page
+//     res.render("new-post", { loggedIn: req.session.loggedIn });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 
 module.exports = router;
