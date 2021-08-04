@@ -1,0 +1,48 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Backup PlanIt - Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-center my-3">Backup PlanIt</h1>
+    </header>
+    <nav class="navbar">
+
+      <a class="nav-item btn btn-secondary p-2 w-25 ms-3" href="/">Home</a>
+      <a
+        href="/dashboard/"
+        class="nav-item btn btn-success p-2 w-25"
+      >Dashboard</a>
+      <button
+        class="nav-item btn btn-secondary p-2 w-25 me-3"
+        id="logout"
+      >Logout</button>
+
+    </nav>
+    <main>
+      <div class="body-wrapper container">
+        <h2 class="header text-center">Dashboard</h2>
+        {{{body}}}
+      </div>
+    </main>
+    <script src="/js/logout.js"></script>
+  </body>
+
+</html>
