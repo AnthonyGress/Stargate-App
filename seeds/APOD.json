@@ -1,0 +1,10 @@
+// Astronomy pic of the day URL https://api.nasa.gov/planetary/apod?api_key=Y0LfWDWXIyVWrPcCEd0fDNayJjsQ8kxHYBz4NtwA
+{
+  "date": "2021-08-04",
+  "explanation": "How do supermassive black holes create powerful jets? To help find out, the Event Horizon Telescope (EHT) imaged the center of the nearby active galaxy Centaurus A.  The cascade of featured inset images shows Cen A from it largest, taking up more sky than many moons, to its now finest, taking up only as much sky as an golf ball on the moon. The new image shows what may look like two jets -- but is actually two sides of a single jet.  This newly discovered jet-edge brightening does not solve the jet-creation mystery, but does imply that the particle outflow is confined by a strong pressure -- possibly involving a magnetic field.  The EHT is a coordination of radio telescopes from around the Earth -- from the Caltech Submillimeter Observatory in Hawaii USA, to ALMA in Chile, to NOEMA in France, and more. The EHT will continue to observe massive, nearby black holes and their energetic surroundings.",
+  "hdurl": "https://apod.nasa.gov/apod/image/2108/CenAjets_Eht_3001.jpg",
+  "media_type": "image",
+  "service_version": "v1",
+  "title": "EHT Resolves Central Jet from Black Hole in Cen A",
+  "url": "https://apod.nasa.gov/apod/image/2108/CenAjets_Eht_960.jpg"
+}
