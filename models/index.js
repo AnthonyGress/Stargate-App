@@ -1,6 +1,6 @@
 // relationships
 const User = require("./User");
-// const Post = require("./Post");
+const Bodies = require("./Bodies");
 // const Comment = require("./Comment");
 
 // Post.belongsTo(User, {
@@ -16,4 +16,4 @@ const User = require("./User");
 //   foreignKey: "user_id",
 // });
 
-module.exports = { User };
+module.exports = { User, Bodies };
