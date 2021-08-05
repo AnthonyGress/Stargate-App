@@ -4,6 +4,8 @@ import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.118/examples
 
 import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js";
 
+import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js";
+
 class BasicWorldDemo {
   constructor() {
     this._Initialize();
@@ -17,7 +19,7 @@ class BasicWorldDemo {
     this._threejs.shadowMap.type = THREE.PCFSoftShadowMap;
     this._threejs.setPixelRatio(window.devicePixelRatio);
     this._threejs.setSize(window.innerWidth, window.innerHeight);
-    //TODO make this canvas a child of model so we can manipulate it inside of the div
+    //TODO make this canvas a child of model so we can manipulate it inside of the div #model
     document.body.appendChild(this._threejs.domElement);
 
     window.addEventListener(
@@ -118,8 +120,18 @@ class BasicWorldDemo {
     // this._scene.add(box);
 
     this._RAF();
+    this._LoadModel();
   }
-
+  _LoadModel() {
+    const loader = new GLTFLoader();
+    loader.load("../assets/Galaxy3DTest/model/scene.gltf", (gltf) => {
+      gltf.scene.traverse((c) => {
+        c.castShadow = true;
+        c.position.set(-22, -42, -10);
+      });
+      this._scene.add(gltf.scene);
+    });
+  }
   _OnWindowResize() {
     this._camera.aspect = window.innerWidth / window.innerHeight;
     this._camera.updateProjectionMatrix();
