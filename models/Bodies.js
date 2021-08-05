@@ -17,13 +17,14 @@ Bodies.init(
     },
     isPlanet: {
       type: DataTypes.BOOLEAN,
+      allowNull: true,
     },
     moons: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
       allowNull: true,
     },
     aroundPlanet: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
       allowNull: true,
     },
     discoveredBy: {
@@ -31,21 +32,21 @@ Bodies.init(
       allowNull: true,
     },
     discoveryDate: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     mass: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
       allowNull: true,
     },
     // closest point to sun
     perihelion: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BIGINT,
       allowNull: true,
     },
     // farthest point from sun
     aphelion: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BIGINT,
       allowNull: true,
     },
     gravity: {
@@ -53,8 +54,12 @@ Bodies.init(
       allowNull: true,
     },
     // time in earth days for 1 orbit
-    sideral: {
+    sideralOrbit: {
       type: DataTypes.STRING,
+      allowNull: true,
+    },
+    explanation: {
+      type: DataTypes.STRING(1300),
       allowNull: true,
     },
   },
@@ -62,7 +67,7 @@ Bodies.init(
     sequelize,
     timestamps: false,
     freezeTableName: true,
-    underscored: true,
+    underscored: false,
     modelName: "bodies",
   }
 );

@@ -21,6 +21,8 @@
     "express-session": "^1.17.1",
     "module": "^1.2.5",
     "mysql2": "^2.2.5",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
     "sequelize": "^6.3.5",
     "three": "^0.131.2"
   },
