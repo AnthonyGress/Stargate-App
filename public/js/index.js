@@ -61,8 +61,8 @@ class BasicWorldDemo {
     controls.target.set(0, 20, 0);
     controls.update();
 
-    const loader = new THREE.CubeTextureLoader();
-    const texture = loader.load([
+    const bgLoader = new THREE.CubeTextureLoader();
+    const bgTexture = bgLoader.load([
       "../assets/skyBox/skyBackground.png",
       "../assets/skyBox/skyBackground.png",
       "../assets/skyBox/skyBackground.png",
@@ -70,22 +70,28 @@ class BasicWorldDemo {
       "../assets/skyBox/skyBackground.png",
       "../assets/skyBox/skyBackground.png",
     ]);
-    this._scene.background = texture;
+    this._scene.background = bgTexture;
 
-    const plane = new THREE.Mesh(
-      new THREE.PlaneGeometry(100, 100, 10, 10),
-      new THREE.MeshStandardMaterial({
-        color: 0xfffff,
-      })
+    const textureLoader = new THREE.TextureLoader();
+    const normalTexture = textureLoader.load(
+      "../assets/sphere/normalTexture.jpeg"
     );
-    plane.castShadow = false;
-    plane.receiveShadow = true;
-    plane.rotation.x = -Math.PI / 2;
-    this._scene.add(plane);
-    var model = new FBXLoader();
-    model.load("../assets/Galaxy3DTest/source/Univers.fbx", function (object) {
-      this._scene.FBXLoader(model);
-    });
+
+    const geometry = new THREE.SphereGeometry(9, 12, 12);
+
+    const material = new THREE.MeshStandardMaterial();
+    material.metalness = 0.6;
+    material.roughness = 0.3;
+    material.normalMap = normalTexture;
+
+    // combine geometry and material to create object
+    const sphere = new THREE.Mesh(geometry, material);
+
+    sphere.castShadow = false;
+    sphere.receiveShadow = true;
+    sphere.rotation.x = -Math.PI / 2;
+    // add sphere to the scene
+    this._scene.add(sphere);
 
     // const loader = new FBXLoader;
 
