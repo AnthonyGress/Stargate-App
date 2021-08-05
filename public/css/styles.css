@@ -55,6 +55,7 @@ canvas {
   margin: 0;
   /* overflow: hidden; */
   outline: none;
+  justify-content: center !important;
 }
 
 body {
