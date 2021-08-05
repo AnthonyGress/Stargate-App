@@ -1,8 +1,8 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js';
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js";
 
-import {OrbitControls} from 'https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js";
 
-import {FBXLoader} from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js';
+import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js";
 
 class BasicWorldDemo {
   constructor() {
@@ -17,12 +17,16 @@ class BasicWorldDemo {
     this._threejs.shadowMap.type = THREE.PCFSoftShadowMap;
     this._threejs.setPixelRatio(window.devicePixelRatio);
     this._threejs.setSize(window.innerWidth, window.innerHeight);
-
+    //TODO make this canvas a child of model so we can manipulate it inside of the div
     document.body.appendChild(this._threejs.domElement);
 
-    window.addEventListener('resize', () => {
-      this._OnWindowResize();
-    }, false);
+    window.addEventListener(
+      "resize",
+      () => {
+        this._OnWindowResize();
+      },
+      false
+    );
 
     const fov = 60;
     const aspect = 1920 / 1080;
@@ -33,7 +37,7 @@ class BasicWorldDemo {
 
     this._scene = new THREE.Scene();
 
-    let light = new THREE.DirectionalLight(0xFFFFFF, 1.0);
+    let light = new THREE.DirectionalLight(0xffffff, 1.0);
     light.position.set(20, 100, 10);
     light.target.position.set(0, 0, 0);
     light.castShadow = true;
@@ -53,46 +57,47 @@ class BasicWorldDemo {
     light = new THREE.AmbientLight(0x101010);
     this._scene.add(light);
 
-    const controls = new OrbitControls(
-      this._camera, this._threejs.domElement);
+    const controls = new OrbitControls(this._camera, this._threejs.domElement);
     controls.target.set(0, 20, 0);
     controls.update();
 
     const loader = new THREE.CubeTextureLoader();
-    const texture = loader.load(
-        ['../assets/skyBox/skyBackground.png',
-         '../assets/skyBox/skyBackground.png','../assets/skyBox/skyBackground.png',
-         '../assets/skyBox/skyBackground.png','../assets/skyBox/skyBackground.png','../assets/skyBox/skyBackground.png']);
+    const texture = loader.load([
+      "../assets/skyBox/skyBackground.png",
+      "../assets/skyBox/skyBackground.png",
+      "../assets/skyBox/skyBackground.png",
+      "../assets/skyBox/skyBackground.png",
+      "../assets/skyBox/skyBackground.png",
+      "../assets/skyBox/skyBackground.png",
+    ]);
     this._scene.background = texture;
 
     const plane = new THREE.Mesh(
-        new THREE.PlaneGeometry(100, 100, 10, 10),
-        new THREE.MeshStandardMaterial({
-            color: 0xFFFFF,
-          }));
+      new THREE.PlaneGeometry(100, 100, 10, 10),
+      new THREE.MeshStandardMaterial({
+        color: 0xfffff,
+      })
+    );
     plane.castShadow = false;
     plane.receiveShadow = true;
     plane.rotation.x = -Math.PI / 2;
     this._scene.add(plane);
     var model = new FBXLoader();
-    model.load( '../assets/Galaxy3DTest/source/Univers.fbx', function ( object ) {
-        this._scene.FBXLoader(model);
-    } );
-
+    model.load("../assets/Galaxy3DTest/source/Univers.fbx", function (object) {
+      this._scene.FBXLoader(model);
+    });
 
     // const loader = new FBXLoader;
 
     // loader.load( '../assets/Galaxy3DTest/source/*', function ( fbx ) {
 
-	// scene.add( fbx.scene );
+    // scene.add( fbx.scene );
 
     // }, undefined, function ( error ) {
 
-	// console.error( error );
+    // console.error( error );
 
     // } );
-
-    
 
     // const box = new THREE.Mesh(
     //   new THREE.SphereGeometry(2, 32, 32),
@@ -123,13 +128,11 @@ class BasicWorldDemo {
   }
 }
 
-
 let _APP = null;
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
   _APP = new BasicWorldDemo();
 });
-
 
 // import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js';
 
@@ -211,7 +214,7 @@ window.addEventListener('DOMContentLoaded', () => {
 //     // this._LoadAnimatedModelAndPlay(
 //     //     './resources/zombie/', 'mremireh_o_desbiens.fbx',
 //     //     'Silly Dancing.fbx', new THREE.Vector3(20, 0, -20));
-  
+
 //     this._mixers = [];
 //     this._previousRAF = null;
 
@@ -276,7 +279,6 @@ window.addEventListener('DOMContentLoaded', () => {
 //     });
 //   }
 // }
-
 
 // let _APP = null;
 

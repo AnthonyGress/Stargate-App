@@ -49,6 +49,6 @@ canvas {
   margin: 0;
   overflow: hidden;
   outline: none;
-  top: 0;
   margin-left: 80px;
+  z-index: -1;
 }
