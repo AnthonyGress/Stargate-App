@@ -33,7 +33,7 @@ class BasicWorldDemo {
     const near = 1.0;
     const far = 1000.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this._camera.position.set(75, 20, 0);
+    this._camera.position.set(30, 30, 50);
 
     this._scene = new THREE.Scene();
 
