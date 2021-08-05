@@ -93,7 +93,7 @@ class BasicWorldDemo {
     sphere.receiveShadow = true;
     sphere.rotation.x = -Math.PI / 2;
     // add sphere to the scene
-    this._scene.add(sphere);
+    // this._scene.add(sphere);
 
     // const loader = new FBXLoader;
 
@@ -120,14 +120,16 @@ class BasicWorldDemo {
     // this._scene.add(box);
 
     this._RAF();
-    this._LoadModel();
+    //this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf",-22, -42, -10);
+    this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf",-2,3, 0);
+    // this._tick();
   }
-  _LoadModel() {
+  _LoadModel(path, x,y,z) {
     const loader = new GLTFLoader();
-    loader.load("../assets/Galaxy3DTest/model/scene.gltf", (gltf) => {
+    loader.load(path, (gltf) => {
       gltf.scene.traverse((c) => {
-        c.castShadow = true;
-        c.position.set(-22, -42, -10);
+        //c.castShadow = true;
+        c.position.set(x,y,z);
       });
       this._scene.add(gltf.scene);
     });
@@ -144,6 +146,13 @@ class BasicWorldDemo {
       this._RAF();
     });
   }
+
+  // _tick(){
+  //   const elapsedTime = clock.getElapsedTime();
+  //   this._LoadModel.rotation.y = .5*elapsedTime;
+  //   render.render(this._scene,this._camera);
+  //   window.requestAnimationFrame(this._tick);
+  // }
 }
 
 let _APP = null;
