@@ -6,6 +6,8 @@ import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/j
 
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js";
 
+const modelDiv = document.querySelector("#model");
+
 class BasicWorldDemo {
   constructor() {
     this._Initialize();
@@ -20,7 +22,7 @@ class BasicWorldDemo {
     this._threejs.setPixelRatio(window.devicePixelRatio);
     this._threejs.setSize(window.innerWidth, window.innerHeight);
     //TODO make this canvas a child of model so we can manipulate it inside of the div #model
-    document.body.appendChild(this._threejs.domElement);
+    modelDiv.appendChild(this._threejs.domElement);
 
     window.addEventListener(
       "resize",
@@ -121,15 +123,15 @@ class BasicWorldDemo {
 
     this._RAF();
     //this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf",-22, -42, -10);
-    this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf",-2,3, 0);
+    this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
     // this._tick();
   }
-  _LoadModel(path, x,y,z) {
+  _LoadModel(path, x, y, z) {
     const loader = new GLTFLoader();
     loader.load(path, (gltf) => {
       gltf.scene.traverse((c) => {
         //c.castShadow = true;
-        c.position.set(x,y,z);
+        c.position.set(x, y, z);
       });
       this._scene.add(gltf.scene);
     });
