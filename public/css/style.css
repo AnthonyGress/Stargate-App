@@ -45,3 +45,7 @@ canvas {
 .navbar-brand {
   font-size: 1.3rem;
 }
+
+.nav-link:hover {
+  cursor: pointer;
+}
