@@ -34,6 +34,29 @@ router.get("/signup", (req, res) => {
 
   res.render("signup");
 });
+router.get('/solar-system', async(req, res) =>{
+  var myId = [1,2,3];
+  try{
+    const body = await Bodies.findAll({
+        where:{id:[163,167,166,162,201,164,200,198,199]},
+      
+    });
+
+    if (!body) {
+      res.status(404).json({ message: 'Where is our galaxy!?!?' });
+      return;
+    }
+    // const galaxyData = await Bodies.findAll({ where: { id: myId } });
+    // const planet = galaxyData.map((post) => post.get({ plain: true }));
+    // // TODO call helper to pull user info and display it on page
+    // res.render("solar-system", { planet, layout: "dashboard.handlebars" });
+    res.status(200).json(body);
+
+  }
+  catch(err){
+    res.status(500).json(err);
+  }
+});
 
 // single display
 // router.get("/post/:id", async (req, res) => {
