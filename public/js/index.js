@@ -6,7 +6,7 @@ import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/j
 
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js";
 
-const modelDiv = document.querySelector("#model");
+const modelDiv = document.querySelector("#canvas");
 
 class BasicWorldDemo {
   constructor() {
@@ -41,7 +41,7 @@ class BasicWorldDemo {
     this._scene = new THREE.Scene();
 
     let light = new THREE.DirectionalLight(0xffffff, 1.0);
-    light.position.set(20, 100, 10);
+    light.position.set(200, 100, 400);
     light.target.position.set(0, 0, 0);
     light.castShadow = true;
     light.shadow.bias = -0.001;
@@ -99,6 +99,10 @@ class BasicWorldDemo {
     material.metalness = 0.6;
     material.roughness = 0.3;
     material.normalMap = normalTexture;
+    material.color = new THREE.Color(0xF5F5F5);
+    material.transparent = true;
+    material.opacity = 0.4;
+    material.flatShading= false;
 
     // combine geometry and material to create object
     const sphere = new THREE.Mesh(geometry, material);
@@ -135,9 +139,9 @@ class BasicWorldDemo {
 
     this._RAF();
     
-    //this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf",-22, -42, -10);
+    this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf",-22, -42, -10);
     // this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
-    this._LoadModel("../assets/stargate/stargate.glb", 0.5, 0.5, 0.5);
+    //this._LoadModel("../assets/stargate/stargate.glb", 0.5, 0.5, 0.5);
     // this._tick();
   }
   _LoadModel(path, x, y, z) {
