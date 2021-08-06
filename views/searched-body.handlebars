@@ -1,30 +1,76 @@
 <section class="container">
-  <h2 class="header text-center">A bit about {{name}}</h2>
-  <div class="container">
-    <div class="flex-row row justify-content-center">
-     <div id="planet-model"></div>
-     </div>
-  </div>
-  <section class="flex-row row justify-content-center">
-    <section class="col-lg">
-      <div class="card my-4 bg-dark">
-        <header
-          class="ps-4 card-header bg-success text-center fs-2"
-        >{{title}}</header>
-        <p class="ps-4 card-body fs-5">{{explanation}} </p>
-        <div class="ps-4 card-body fs-5">
-            <p>Name:{{name}}</p>
-            <p>Is {{name}} a planet?{{isPlanet}}</p>
-            <p>Moons:{{moons}}</p>
-            <p>Does {{name}} orbit a planet?{{aroundPlanet}}</p>
-            <p>{{name}} was discovered by {{discoveredBy}} on {{discoveryDate}}</p>
-            <p>Mass:{{mass}}</p>
-            <p>Perihelion:{{perihelion}}</p>
-            <p>Aphelion{{aphelion}}</p>
-            <p>Gravity:{{gravity}}</p>
-            <p>Sideral Orbit:{{sideralOrbit}}</p>
+    <h2 class="header text-center">A bit about {{name}}</h2>
+    <div class="container">
+        <div class="flex-row row justify-content-center">
+            <div id="planet-model"></div>
         </div>
-      </div>
+    </div>
+    <section class="flex-row row justify-content-center">
+        <section class="col-lg">
+            <div class="card my-4 bg-dark">
+                <header class="ps-4 card-header bg-success text-center fs-2">{{title}}</header>
+                <p class="ps-4 card-body fs-5">{{explanation}} </p>
+                <div class="ps-4 card-body fs-5">
+                    <p>Name:{{name}}</p>
+                    {{#if isPlanet}}
+                    <p>{{name}} is a planet.</p>
+                    {{else}}
+                    <p>{{name}} is not a planet.</p>
+                    {{/if}}
+
+                    {{#if moons}}
+                    <p>Moon(s) of {{name}}:</p>
+                        {{#each moons}}
+                       
+                           <a href="/api/body/{{moon}}"> <button class="btn btn-success">Moon: {{moon}}</button></a>
+                       
+                        {{/each}}
+                    
+                    {{else}}
+                    <p>{{name}} has no moons.</p>
+
+                    {{/if}}
+                    {{#if aroundPlanet}}
+                    <p>{{name}} orbits the planet {{aroundPlanet.planet}}.</p>
+                    {{else}}
+                    <p>{{name}} doesn't orbit any planets.</p>
+                    {{/if}}
+
+                  
+                    {{#if discoveredBy}}
+                    <p>{{name}} was discovered by {{discoveredBy}} on {{discoveryDate}}</p>
+                    {{else}}
+                    <p>Nobody is credited for the discovery of {{name}}.</p>
+                    {{/if}}
+
+
+                    
+                    {{#if mass}}
+                    <p>Mass: {{mass.massValue}} <sup>{{mass.massExponent}}</sup></p>
+                    {{/if}}
+
+                    
+                    {{#if perihelion}}
+                    <p>Perihelion: {{perihelion}}</p>
+                    {{/if}}
+
+                   
+                    {{#if aphelion}}
+                    <p>Aphelion: {{aphelion}}</p>
+                    {{/if}}
+
+                    
+                    {{#if gravity}}
+                    <p>Gravity:{{gravity}}</p>
+                    {{/if}}
+
+                   
+                    {{#if sideralOrbit}}
+                    <p>Sideral Orbit:{{sideralOrbit}}</p>
+                    {{/if}}
+
+                </div>
+            </div>
+        </section>
     </section>
-  </section>
 </section>
