@@ -35,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/DaytimeDracula/Backup-Planit/issues"
   },
-  "homepage": "https://github.com/DaytimeDracula/Backup-Planit#readme"
+  "homepage": "https://github.com/DaytimeDracula/Backup-Planit#readme",
+  "devDependencies": {
+    "@types/dat.gui": "^0.7.7"
+  }
 }

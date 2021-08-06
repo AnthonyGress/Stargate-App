@@ -76,6 +76,19 @@ class BasicWorldDemo {
     ]);
     this._scene.background = bgTexture;
 
+    // const skybox_group = new THREE.Object3D();
+    // scene.add(skybox_group);
+    // const SkyboxMesh = CreateSphere(
+    //   "./textures/eso_dark.jpg",
+    //   1e8,
+    //   50,
+    //   "Skybox",
+    //   true
+    // );
+    // SkyboxMesh.material.side = THREE.BackSide;
+    // SkyboxMesh.rotation.x = (Math.PI / 180) * 63;
+    // skybox_group.add(SkyboxMesh);
+
     const textureLoader = new THREE.TextureLoader();
     const normalTexture = textureLoader.load(
       "../assets/sphere/normalTexture.jpeg"
@@ -123,7 +136,8 @@ class BasicWorldDemo {
 
     this._RAF();
     //this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf",-22, -42, -10);
-    this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
+    // this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
+    this._LoadModel("../assets/stargate/stargate.glb", 0.5, 0.5, 0.5);
     // this._tick();
   }
   _LoadModel(path, x, y, z) {
