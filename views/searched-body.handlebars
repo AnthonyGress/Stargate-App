@@ -18,25 +18,36 @@
                     <p>{{name}} is not a planet.</p>
                     {{/if}}
 
+
                     {{#if moons}}
-                    <p>Moon(s) of {{name}}:</p>
-                        {{#each moons}}
-                       
-                           <a href="/api/body/{{moon}}"> <button class="btn btn-success">Moon: {{moon}}</button></a>
-                       
-                        {{/each}}
-                    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btn-success" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Moons of {{name}}:
+
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            {{#each moons}}
+                            <li><a class="dropdown-item" href="/api/body/{{moon}}">{{moon}}</a></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+
+
                     {{else}}
                     <p>{{name}} has no moons.</p>
 
                     {{/if}}
+
+
+
                     {{#if aroundPlanet}}
                     <p>{{name}} orbits the planet {{aroundPlanet.planet}}.</p>
                     {{else}}
                     <p>{{name}} doesn't orbit any planets.</p>
                     {{/if}}
 
-                  
+
                     {{#if discoveredBy}}
                     <p>{{name}} was discovered by {{discoveredBy}} on {{discoveryDate}}</p>
                     {{else}}
@@ -44,27 +55,27 @@
                     {{/if}}
 
 
-                    
+
                     {{#if mass}}
                     <p>Mass: {{mass.massValue}} <sup>{{mass.massExponent}}</sup></p>
                     {{/if}}
 
-                    
+
                     {{#if perihelion}}
                     <p>Perihelion: {{perihelion}}</p>
                     {{/if}}
 
-                   
+
                     {{#if aphelion}}
                     <p>Aphelion: {{aphelion}}</p>
                     {{/if}}
 
-                    
+
                     {{#if gravity}}
                     <p>Gravity:{{gravity}}</p>
                     {{/if}}
 
-                   
+
                     {{#if sideralOrbit}}
                     <p>Sideral Orbit:{{sideralOrbit}}</p>
                     {{/if}}
