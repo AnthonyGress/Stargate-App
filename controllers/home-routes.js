@@ -71,7 +71,6 @@ router.get("/featured", async (req, res) => {
     const url =
       "https://api.nasa.gov/planetary/apod?api_key=Y0LfWDWXIyVWrPcCEd0fDNayJjsQ8kxHYBz4NtwA";
     const apod = await get_request(url);
-    const jsonApod = JSON.stringify(apod);
     res.render("featured", {
       ...apod,
       loggedIn: req.session.loggedIn,
@@ -83,8 +82,7 @@ router.get("/featured", async (req, res) => {
 });
 
 const get_request = async (url) => {
-  const encodedURI = encodeURI(url);
-  const res = await fetch(encodedURI);
+  const res = await fetch(url);
   const data = await res.json();
   return data;
 };
