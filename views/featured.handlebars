@@ -1,0 +1,17 @@
+<section class="container">
+  <h2 class="header text-center">Featured</h2>
+  <section class="flex-row row justify-content-center">
+    <section class="col-lg-8">
+  <div class="card my-4 bg-dark">
+      <header class="ps-4 card-header bg-success">Card Header</header>
+      <p class="ps-4 card-body">{{body}}</p>
+  </div>
+  <h3 class="text-center">Comments</h3>
+  {{#if comments}}
+    {{#each comments}}
+    {{> comment-details}}
+    {{/each}}
+  {{/if}}
+</section>
+  </section>
+</section>
