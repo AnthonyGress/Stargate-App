@@ -26,28 +26,6 @@ router.get('/:name', async (req, res) => {
   
 
 
-// router.get('/solar-system', async(req, res) =>{
-//   myId = [1,2,3]
-//   try{
-//     const body = await Bodies.findAll({
-//       where: {
-//           id:myId,
-         
-//       },
-     
-//     });
 
-//     if (!body) {
-//       res.status(404).json({ message: 'Where is our galaxy!?!?' });
-//       return;
-//     }
-
-//     res.status(200).json(body);
-
-//   }
-//   catch(err){
-//     res.status(500).json(err);
-//   }
-// });
 
 module.exports = router;
