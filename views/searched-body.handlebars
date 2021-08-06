@@ -1,0 +1,30 @@
+<section class="container">
+  <h2 class="header text-center">A bit about {{name}}</h2>
+  <div class="container">
+    <div class="flex-row row justify-content-center">
+     <div id="planet-model"></div>
+     </div>
+  </div>
+  <section class="flex-row row justify-content-center">
+    <section class="col-lg">
+      <div class="card my-4 bg-dark">
+        <header
+          class="ps-4 card-header bg-success text-center fs-2"
+        >{{title}}</header>
+        <p class="ps-4 card-body fs-5">{{explanation}} </p>
+        <div class="ps-4 card-body fs-5">
+            <p>Name:{{name}}</p>
+            <p>Is {{name}} a planet?{{isPlanet}}</p>
+            <p>Moons:{{moons}}</p>
+            <p>Does {{name}} orbit a planet?{{aroundPlanet}}</p>
+            <p>{{name}} was discovered by {{discoveredBy}} on {{discoveryDate}}</p>
+            <p>Mass:{{mass}}</p>
+            <p>Perihelion:{{perihelion}}</p>
+            <p>Aphelion{{aphelion}}</p>
+            <p>Gravity:{{gravity}}</p>
+            <p>Sideral Orbit:{{sideralOrbit}}</p>
+        </div>
+      </div>
+    </section>
+  </section>
+</section>
