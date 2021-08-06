@@ -1,19 +1,11 @@
 // home page shows all posts
 const router = require("express").Router();
 const { Comment, Bodies, User } = require("../models");
-
+const fetch = require("node-fetch");
 // / routes
 
 router.get("/", async (req, res) => {
   try {
-    // const dbPostData = await Post.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //     },
-    //   ],
-    // });
-    // const posts = dbPostData.map((post) => post.get({ plain: true }));
     res.render("homepage", {
       loggedIn: req.session.loggedIn,
     });
@@ -76,15 +68,11 @@ router.get("/signup", (req, res) => {
 
 router.get("/featured", async (req, res) => {
   try {
-    // const dbPostData = await Post.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //     },
-    //   ],
-    // });
-    // const posts = dbPostData.map((post) => post.get({ plain: true }));
+    const url =
+      "https://api.nasa.gov/planetary/apod?api_key=Y0LfWDWXIyVWrPcCEd0fDNayJjsQ8kxHYBz4NtwA";
+    const apod = await get_request(url);
     res.render("featured", {
+      ...apod,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
@@ -92,3 +80,9 @@ router.get("/featured", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+const get_request = async (url) => {
+  const res = await fetch(url);
+  const data = await res.json();
+  return data;
+};
