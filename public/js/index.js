@@ -37,8 +37,7 @@ class BasicWorldDemo {
     const near = 1.0;
     const far = 1000.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this._camera.position.set(30, 30, 50);
-
+    this._camera.position.set(30, 30, 50);  
     this._scene = new THREE.Scene();
 
     let light = new THREE.DirectionalLight(0xffffff, 1.0);
@@ -93,9 +92,9 @@ class BasicWorldDemo {
 
     sphere.castShadow = false;
     sphere.receiveShadow = true;
-    sphere.rotation.x = -Math.PI / 2;
+    sphere.rotation.y = -Math.PI / 2;
     // add sphere to the scene
-    // this._scene.add(sphere);
+    this._scene.add(sphere);
 
     // const loader = new FBXLoader;
 
@@ -122,6 +121,7 @@ class BasicWorldDemo {
     // this._scene.add(box);
 
     this._RAF();
+    
     //this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf",-22, -42, -10);
     this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
     // this._tick();
