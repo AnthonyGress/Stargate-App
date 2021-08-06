@@ -4,7 +4,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "terre"
+      "planet": "earth"
     },
     "discoveredBy": "",
     "discoveryDate": "",
@@ -3593,7 +3593,7 @@
     "isPlanet": true,
     "moons": [
       {
-        "moon": "La Lune",
+        "moon": "Moon",
         "rel": "https://api.le-systeme-solaire.net/rest/bodies/lune"
       }
     ],
