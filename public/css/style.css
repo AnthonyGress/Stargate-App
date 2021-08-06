@@ -45,15 +45,9 @@ canvas {
 .navbar-brand {
   font-size: 1.3rem;
 }
-#canavas {
-  width: 50%;
-  height:50%;
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
-  /* z-index: -1; */
-  /* margin-left: 50%; */
-	margin-right: 50%;
-  margin-top: 20px;
-	margin-bottom: 20px;
+
+
+.nav-link:hover {
+  cursor: pointer;
 }
+

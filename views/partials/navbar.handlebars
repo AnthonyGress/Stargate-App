@@ -26,10 +26,10 @@
         <li class="nav-item">
           <a class="nav-link" href="/login">Log in</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/login">Dashboard</a>
-        </li>
         {{#if loggedIn}}
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -48,6 +48,10 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
+          <li class="nav-item" id="logout">
+            <span class="nav-link">Logout</span>
+          </li>
+          <script src="/js/logout.js"></script>
         {{else}}
           <li class="nav-item">
             <a
