@@ -37,7 +37,7 @@ class BasicWorldDemo {
     const near = 1.0;
     const far = 800.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this._camera.position.set(0, 50, 50);
+    this._camera.position.set(0, 20, 15);
     this._scene = new THREE.Scene();
 
     let light = new THREE.DirectionalLight(0xffffff, 1);
@@ -61,7 +61,11 @@ class BasicWorldDemo {
     this._scene.add(light);
 
     const controls = new OrbitControls(this._camera, this._threejs.domElement);
-    controls.target.set(0, 20, 0);
+    // const controls = new OrbitControls(
+    //   this._scene.sphere,
+    //   this._threejs.domElement
+    // );
+    controls.target.set(0, 0, 0);
     controls.update();
 
     const bgLoader = new THREE.CubeTextureLoader();
@@ -108,37 +112,13 @@ class BasicWorldDemo {
 
     // combine geometry and material to create object
     const sphere = new THREE.Mesh(geometry, material);
-
+    this._scene.sphere = sphere;
     sphere.castShadow = false;
     sphere.receiveShadow = true;
     sphere.rotation.y = -Math.PI / 2;
     // add sphere to the scene
 
     this._scene.add(sphere);
-
-    // const loader = new FBXLoader;
-
-    // loader.load( '../assets/Galaxy3DTest/source/*', function ( fbx ) {
-
-    // scene.add( fbx.scene );
-
-    // }, undefined, function ( error ) {
-
-    // console.error( error );
-
-    // } );
-
-    // const box = new THREE.Mesh(
-    //   new THREE.SphereGeometry(2, 32, 32),
-    //   new THREE.MeshStandardMaterial({
-    //       color: 0xFFFFFF,
-    //       wireframe: true,
-    //       wireframeLinewidth: 4,
-    //   }));
-    // box.position.set(0, 0, 0);
-    // box.castShadow = true;
-    // box.receiveShadow = true;
-    // this._scene.add(box);
 
     this._RAF();
 
