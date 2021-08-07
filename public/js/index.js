@@ -67,6 +67,8 @@ class BasicWorldDemo {
     this.orbitControls.maxDistance = 50;
     this.orbitControls.enablePan = false;
     this.orbitControls.enableDamping = true;
+    this.orbitControls.autoRotate = true;
+    this.orbitControls.autoRotateSpeed = 0.8;
 
     this.orbitControls.update();
 
