@@ -93,7 +93,7 @@ class BasicWorldDemo {
       "../assets/sphere/earth_atmos_4096.jpeg"
     );
 
-    const geometry = new THREE.SphereGeometry(9, 12, 12);
+    const geometry = new THREE.SphereGeometry(9, 20, 20);
 
     const material = new THREE.MeshBasicMaterial({
       map: texture,
