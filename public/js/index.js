@@ -37,7 +37,7 @@ class BasicWorldDemo {
     const near = 1.0;
     const far = 800.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this._camera.position.set(0, 50, 50);
+    this._camera.position.set(0, 20, 15);
     this._scene = new THREE.Scene();
 
     let light = new THREE.DirectionalLight(0xffffff, 1);
@@ -61,8 +61,12 @@ class BasicWorldDemo {
     this._scene.add(light);
 
     const controls = new OrbitControls(this._camera, this._threejs.domElement);
-    controls.target.set(0, 20, 0);
-    controls.update();
+    controls.target.set(0, 0, 0);
+    this.orbitControls = controls;
+    this.orbitControls.minDistance = 15;
+    this.orbitControls.maxDistance = 50;
+
+    this.orbitControls.update();
 
     const bgLoader = new THREE.CubeTextureLoader();
     const bgTexture = bgLoader.load([
@@ -88,10 +92,14 @@ class BasicWorldDemo {
     // SkyboxMesh.rotation.x = (Math.PI / 180) * 63;
     // skybox_group.add(SkyboxMesh);
 
+    const earthSource = "../assets/sphere/earth_atmos_4096.jpeg";
+    const marsSource = "../assets/sphere/mars.jpeg";
+    const moonSource = "../assets/sphere/moon_map.jpeg";
+
+    let textureSource = earthSource;
+
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load(
-      "../assets/sphere/earth_atmos_4096.jpeg"
-    );
+    const texture = textureLoader.load(textureSource);
 
     const geometry = new THREE.SphereGeometry(9, 20, 20);
 
@@ -108,37 +116,13 @@ class BasicWorldDemo {
 
     // combine geometry and material to create object
     const sphere = new THREE.Mesh(geometry, material);
-
+    this._scene.sphere = sphere;
     sphere.castShadow = false;
     sphere.receiveShadow = true;
     sphere.rotation.y = -Math.PI / 2;
     // add sphere to the scene
 
     this._scene.add(sphere);
-
-    // const loader = new FBXLoader;
-
-    // loader.load( '../assets/Galaxy3DTest/source/*', function ( fbx ) {
-
-    // scene.add( fbx.scene );
-
-    // }, undefined, function ( error ) {
-
-    // console.error( error );
-
-    // } );
-
-    // const box = new THREE.Mesh(
-    //   new THREE.SphereGeometry(2, 32, 32),
-    //   new THREE.MeshStandardMaterial({
-    //       color: 0xFFFFFF,
-    //       wireframe: true,
-    //       wireframeLinewidth: 4,
-    //   }));
-    // box.position.set(0, 0, 0);
-    // box.castShadow = true;
-    // box.receiveShadow = true;
-    // this._scene.add(box);
 
     this._RAF();
 

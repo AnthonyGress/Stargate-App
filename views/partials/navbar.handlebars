@@ -18,17 +18,43 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/featured">Featured</a>
-        </li>
-        <li class="nav-item">
           <a
             class="nav-link"
             href="https://techx-guy.github.io/threejs-start/"
           >Stargate</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/featured">Picture of the Day</a>
+        </li>
         {{#if loggedIn}}
           <li class="nav-item">
             <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Solar System
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Earth</a></li>
+              <li><a class="dropdown-item" href="#">Moon</a></li>
+              <li><a class="dropdown-item" href="#">Sun</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Mercury</a></li>
+              <li><a class="dropdown-item" href="#">Venus</a></li>
+              <li><a class="dropdown-item" href="#">Mars</a></li>
+              <li><a class="dropdown-item" href="#">Jupiter</a></li>
+              <li><a class="dropdown-item" href="#">Saturn</a></li>
+              <li><a class="dropdown-item" href="#">Uranus</a></li>
+              <li><a class="dropdown-item" href="#">Neptune</a></li>
+              <li><a class="dropdown-item" href="#">Pluto</a></li>
+            </ul>
           </li>
           <li class="nav-item" id="logout">
             <span class="nav-link">Logout</span>
