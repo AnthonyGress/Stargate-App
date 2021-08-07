@@ -61,12 +61,12 @@ class BasicWorldDemo {
     this._scene.add(light);
 
     const controls = new OrbitControls(this._camera, this._threejs.domElement);
-    // const controls = new OrbitControls(
-    //   this._scene.sphere,
-    //   this._threejs.domElement
-    // );
     controls.target.set(0, 0, 0);
-    controls.update();
+    this.orbitControls = controls;
+    this.orbitControls.minDistance = 15;
+    this.orbitControls.maxDistance = 50;
+
+    this.orbitControls.update();
 
     const bgLoader = new THREE.CubeTextureLoader();
     const bgTexture = bgLoader.load([
@@ -92,10 +92,14 @@ class BasicWorldDemo {
     // SkyboxMesh.rotation.x = (Math.PI / 180) * 63;
     // skybox_group.add(SkyboxMesh);
 
+    const earthSource = "../assets/sphere/earth_atmos_4096.jpeg";
+    const marsSource = "../assets/sphere/mars.jpeg";
+    const moonSource = "../assets/sphere/moon_map.jpeg";
+
+    let textureSource = earthSource;
+
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load(
-      "../assets/sphere/earth_atmos_4096.jpeg"
-    );
+    const texture = textureLoader.load(textureSource);
 
     const geometry = new THREE.SphereGeometry(9, 20, 20);
 
