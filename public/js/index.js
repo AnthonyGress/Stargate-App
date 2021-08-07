@@ -66,6 +66,7 @@ class BasicWorldDemo {
     this.orbitControls.minDistance = 15;
     this.orbitControls.maxDistance = 50;
     this.orbitControls.enablePan = false;
+    this.orbitControls.enableDamping = true;
 
     this.orbitControls.update();
 
@@ -151,6 +152,7 @@ class BasicWorldDemo {
   _RAF() {
     requestAnimationFrame(() => {
       this._threejs.render(this._scene, this._camera);
+      this.orbitControls.update();
       this._RAF();
     });
   }
