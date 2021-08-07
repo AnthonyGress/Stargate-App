@@ -65,6 +65,7 @@ class BasicWorldDemo {
     this.orbitControls = controls;
     this.orbitControls.minDistance = 15;
     this.orbitControls.maxDistance = 50;
+    this.orbitControls.enablePan = false;
 
     this.orbitControls.update();
 
