@@ -3,6 +3,7 @@ const stargate = document.querySelector(".stargate");
 const signup = document.querySelector(".signup");
 const login = document.querySelector(".login");
 const potd = document.querySelector(".potd");
+const dashboard = document.querySelector(".dashboard");
 const searchForm = document.querySelector(".search-form");
 
 let currentUrl = window.location.href.toString().split("/").pop();
@@ -12,6 +13,8 @@ if (currentUrl == "") {
   home.classList.add("active");
 } else if (currentUrl == "stargate") {
   stargate.classList.add("active");
+} else if (currentUrl == "dashboard") {
+  dashboard.classList.add("active");
 } else if (currentUrl == "signup") {
   signup.classList.add("active");
 } else if (currentUrl == "login") {
