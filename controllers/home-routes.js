@@ -35,7 +35,6 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 router.get("/solar-system", async (req, res) => {
-  var myId = [1, 2, 3];
   try {
     const body = await Bodies.findAll({
       where: { id: [163, 167, 166, 162, 201, 164, 200, 198, 199] },
