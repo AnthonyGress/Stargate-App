@@ -3,6 +3,7 @@ const stargate = document.querySelector(".stargate");
 const signup = document.querySelector(".signup");
 const login = document.querySelector(".login");
 const potd = document.querySelector(".potd");
+const searchForm = document.querySelector(".search-form");
 
 let currentUrl = window.location.href.toString().split("/").pop();
 
@@ -18,3 +19,16 @@ if (currentUrl == "") {
 } else if (currentUrl == "potd") {
   potd.classList.add("active");
 }
+
+function search_body(event) {
+  event.preventDefault();
+  let input = document.getElementById("body-term").value.trim().toLowerCase();
+  let url = `/api/body/${input}`;
+  console.log(url);
+  const getPlanet = (url) => {
+    window.location.href = url;
+  };
+  getPlanet(url);
+}
+
+searchForm.addEventListener("submit", search_body);
