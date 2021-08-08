@@ -4,7 +4,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "earth"
+      "planet": "Earth"
     },
     "discoveredBy": "",
     "discoveryDate": "",
@@ -23,7 +23,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "mars",
+      "planet": "Mars",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/mars"
     },
     "discoveredBy": "Asaph Hall",
@@ -43,7 +43,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "mars",
+      "planet": "Mars",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/mars"
     },
     "discoveredBy": "Asaph Hall",
@@ -63,7 +63,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Galileo Galilei",
@@ -83,7 +83,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Galileo Galilei",
@@ -103,7 +103,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Galileo Galilei",
@@ -123,7 +123,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Galileo Galilei",
@@ -143,7 +143,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "E. Barnard",
@@ -163,7 +163,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "C. Perrine",
@@ -183,7 +183,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "C. Perrine",
@@ -204,7 +204,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "P. Melotte",
@@ -224,7 +224,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Seth Barnes Nicholson",
@@ -244,7 +244,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Seth Barnes Nicholson",
@@ -264,7 +264,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Seth Barnes Nicholson",
@@ -284,7 +284,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Seth Barnes Nicholson",
@@ -304,7 +304,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Charles Kowa",
@@ -324,7 +324,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Stephen P. Synnott",
@@ -344,7 +344,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "David C. Jewitt, G. E. Danielson",
@@ -364,7 +364,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Stephen P. Synnott",
@@ -385,7 +385,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Charles Kowal 1975 - Scott S. Sheppard, David C. Jewitt 2000",
@@ -405,7 +405,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -425,7 +425,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -445,7 +445,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -465,7 +465,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -485,7 +485,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -505,7 +505,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -525,7 +525,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -546,7 +546,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -566,7 +566,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -586,7 +586,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -606,7 +606,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -626,7 +626,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -646,7 +646,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -666,7 +666,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -686,7 +686,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -707,7 +707,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -727,7 +727,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -747,7 +747,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -767,7 +767,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -787,7 +787,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -807,7 +807,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -827,7 +827,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -847,7 +847,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -868,7 +868,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -888,7 +888,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -907,7 +907,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -926,7 +926,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -945,7 +945,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -964,7 +964,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "William Herschel",
@@ -984,7 +984,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "William Herschel",
@@ -1004,7 +1004,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Jean-Dominique Cassini",
@@ -1024,7 +1024,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Jean-Dominique Cassini",
@@ -1044,7 +1044,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Jean-Dominique Cassini",
@@ -1065,7 +1065,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Christian Huygens",
@@ -1085,7 +1085,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "William Cranch Bond, George Phillips Bond",
@@ -1105,7 +1105,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Jean-Dominique Cassini",
@@ -1125,7 +1125,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "William Henry Pickering",
@@ -1145,7 +1145,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Audouin Dollfus",
@@ -1165,7 +1165,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Richard L. Walker",
@@ -1185,7 +1185,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Pierre Laques, Raymond Despiau, Jean Lecacheux",
@@ -1206,7 +1206,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Stewart A. Collins, D. Carlson",
@@ -1226,7 +1226,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Stewart A. Collins",
@@ -1246,7 +1246,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Mark R. Showalter",
@@ -1266,7 +1266,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Brett J. Gladman",
@@ -1286,7 +1286,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1306,7 +1306,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1326,7 +1326,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1346,7 +1346,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1366,7 +1366,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Brett J. Gladman",
@@ -1386,7 +1386,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1407,7 +1407,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1427,7 +1427,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1447,7 +1447,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1467,7 +1467,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1487,7 +1487,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman",
@@ -1507,7 +1507,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna",
@@ -1527,7 +1527,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carolyn C. Porco, S&eacute;bastien Charnoz",
@@ -1547,7 +1547,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carolyn C. Porco, S&eacute;bastien Charnoz",
@@ -1567,7 +1567,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carolyn C. Porco",
@@ -1588,7 +1588,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1608,7 +1608,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1628,7 +1628,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1648,7 +1648,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1668,7 +1668,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1688,7 +1688,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1708,7 +1708,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1729,7 +1729,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1749,7 +1749,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1769,7 +1769,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1789,7 +1789,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carolyn C. Porco, l'&eacute;quipe Cassini",
@@ -1809,7 +1809,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1829,7 +1829,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1850,7 +1850,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1869,7 +1869,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1888,7 +1888,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1907,7 +1907,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1926,7 +1926,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1945,7 +1945,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt, Jan Kleyna, Brian G. Marsden",
@@ -1964,7 +1964,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carolyn C. Porco",
@@ -1984,7 +1984,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "William Herschel",
@@ -2004,7 +2004,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Gerard Kuiper",
@@ -2024,7 +2024,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Richard J. Terrile",
@@ -2044,7 +2044,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Richard J. Terrile",
@@ -2064,7 +2064,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Bradford A. Smith",
@@ -2084,7 +2084,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Stephen P. Synnott",
@@ -2104,7 +2104,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Stephen P. Synnott",
@@ -2125,7 +2125,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Stephen P. Synnott",
@@ -2145,7 +2145,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Stephen P. Synnott",
@@ -2165,7 +2165,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Brett J. Gladman, Philip D. Nicholson, Joseph A. Burns, John J. Kavelaars",
@@ -2185,7 +2185,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Philip D. Nicholson, Brett J. Gladman, Joseph A. Burns, John J. Kavelaars",
@@ -2205,7 +2205,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Matthew J. Holman, John J. Kavelaars, Brett J. Gladman, Jean-Marc Petit, Hans Scholl",
@@ -2225,7 +2225,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "John J. Kavelaars, Brett J. Gladman, Matthew J. Holman, Jean-Marc Petit, Hans Scholl",
@@ -2245,7 +2245,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Brett J. Gladman, Matthew J. Holman, John J. Kavelaars, Jean-Marc Petit, Hans Scholl",
@@ -2265,7 +2265,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Matthew J. Holman, John J. Kavelaars, Dan Milisavljevic",
@@ -2285,7 +2285,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Matthew J. Holman, John J. Kavelaars, Dan Milisavljevic, Brett J. Gladman",
@@ -2306,7 +2306,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Matthew J. Holman, John J. Kavelaars, Dan Milisavljevic, Brett J. Gladman",
@@ -2326,7 +2326,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Erich Karkoschka",
@@ -2346,7 +2346,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Mark R. Showalter, Jack J. Lissauer",
@@ -2366,7 +2366,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "uranus",
+      "planet": "Uranus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/uranus"
     },
     "discoveredBy": "Mark R. Showalter, Jack J. Lissauer",
@@ -2386,7 +2386,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "William Lassell",
@@ -2406,7 +2406,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Stephen P. Synnott",
@@ -2427,7 +2427,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Harold J. Reitsema, William B. Hubbard, Larry A. Lebofsky, David J. Tholen",
@@ -2447,7 +2447,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Stephen P. Synnott, Bradford A. Smith",
@@ -2467,7 +2467,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Matthew J. Holman, John J. Kavelaars, Tommy Grav, Wesley C. Fraser, Dan Milisavljevic",
@@ -2487,7 +2487,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Scott S. Sheppard",
@@ -2507,7 +2507,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Matthew J. Holman, John J. Kavelaars, Tommy Grav, Wesley C. Fraser, Dan Milisavljevic",
@@ -2527,7 +2527,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Matthew J. Holman, John J. Kavelaars, Tommy Grav, Wesley C. Fraser, Dan Milisavljevic",
@@ -2547,7 +2547,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "neptune",
+      "planet": "Neptune",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/neptune"
     },
     "discoveredBy": "Matthew J. Holman",
@@ -2567,7 +2567,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "pluton",
+      "planet": "Pluto",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/pluton"
     },
     "discoveredBy": "James W. Christy",
@@ -2587,7 +2587,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "pluton",
+      "planet": "Pluto",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/pluton"
     },
     "discoveredBy": "Hubble Space Telescope Pluto Companion Search Team",
@@ -2608,7 +2608,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "haumea",
+      "planet": "Haumea",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/haumea"
     },
     "discoveredBy": "Michael E. Brown",
@@ -2628,7 +2628,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "haumea",
+      "planet": "Haumea",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/haumea"
     },
     "discoveredBy": "Michael E. Brown",
@@ -2648,7 +2648,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "eris",
+      "planet": "Eris",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/eris"
     },
     "discoveredBy": "Michael E. Brown",
@@ -2668,7 +2668,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard, David C. Jewitt",
@@ -2688,7 +2688,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carl Murray",
@@ -2707,7 +2707,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carl Murray",
@@ -2726,7 +2726,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "Carolyn C. Porco",
@@ -2780,7 +2780,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "eugenia",
+      "planet": "Eugenia",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/eugenia"
     },
     "discoveredBy": "W. J. Merline, L. M. Close, C. Dumas, C. R. Chapman, F. Roddier, F. Menard, D. C. Slater, G. Duvert, J. C. Shelton, T. Morgan",
@@ -2818,7 +2818,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "sylvia",
+      "planet": "Sylvia",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/sylvia"
     },
     "discoveredBy": "Franck Marchis, Pascal Descamps, Daniel Hestroffer, J&eacute;rome Berthier",
@@ -2907,7 +2907,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "orcus",
+      "planet": "Orcus",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/orcus"
     },
     "discoveredBy": "Michael E. Brown, T.A. Suer",
@@ -2962,7 +2962,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "sylvia",
+      "planet": "Sylvia",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/sylvia"
     },
     "discoveredBy": "Michael E. Brown, Jean-Luc Margot",
@@ -2982,7 +2982,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "kleopatra",
+      "planet": "Kleopatra",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/kleopatra"
     },
     "discoveredBy": "F. Marchis, P. Descamps, J. Berthier, F. Vachier, J. P. Emery",
@@ -3002,7 +3002,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "kleopatra",
+      "planet": "Kleopatra",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/kleopatra"
     },
     "discoveredBy": "F. Marchis, P. Descamps, J. Berthier, F. Vachier, J. P. Emery",
@@ -3632,7 +3632,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "pluton",
+      "planet": "Pluto",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/pluton"
     },
     "discoveredBy": "T&eacute;lescope spatial Hubble - Pluto Companion Search Team",
@@ -3652,7 +3652,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott S. Sheppard",
@@ -3672,7 +3672,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "makemake",
+      "planet": "Makemake",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/makemake"
     },
     "discoveredBy": "Alex H. Parker, Marc W. Buie, M. Grundy, Keith S. Noll",
@@ -3691,7 +3691,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3710,7 +3710,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3729,7 +3729,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3749,7 +3749,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3768,7 +3768,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3787,7 +3787,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3808,7 +3808,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3827,7 +3827,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3846,7 +3846,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "jupiter",
+      "planet": "Jupiter",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/jupiter"
     },
     "discoveredBy": "Scott Sheppard",
@@ -3900,7 +3900,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -3917,7 +3917,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -3933,7 +3933,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -3949,7 +3949,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -3965,7 +3965,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -3981,7 +3981,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -3997,7 +3997,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4013,7 +4013,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4029,7 +4029,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4045,7 +4045,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4061,7 +4061,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4078,7 +4078,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4094,7 +4094,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4110,7 +4110,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4126,7 +4126,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
@@ -4142,7 +4142,7 @@
     "isPlanet": false,
     "moons": null,
     "aroundPlanet": {
-      "planet": "saturne",
+      "planet": "Saturn",
       "rel": "https://api.le-systeme-solaire.net/rest/bodies/saturne"
     },
     "discoveredBy": "S. Sheppard, D. Jewitt, J. Kleyna",
