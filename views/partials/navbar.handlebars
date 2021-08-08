@@ -15,20 +15,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link home" href="/" aria-current="page">Home</a>
         </li>
         <li class="nav-item">
           <a
-            class="nav-link"
+            class="nav-link stargate"
             href="https://techx-guy.github.io/threejs-start/"
           >Stargate</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/featured">Picture of the Day</a>
+          <a class="nav-link potd" href="/potd">Picture of the Day</a>
         </li>
         {{#if loggedIn}}
           <li class="nav-item">
-            <a class="nav-link" href="/dashboard">Dashboard</a>
+            <a class="nav-link dashboard" href="/dashboard">Dashboard</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -62,16 +62,17 @@
           <script src="/js/logout.js"></script>
         {{else}}
           <li class="nav-item">
-            <a class="nav-link" href="/signup">Sign Up</a>
+            <a class="nav-link signup" href="/signup">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">Log in</a>
+            <a class="nav-link login" href="/login">Log in</a>
           </li>
         {{/if}}
       </ul>
-      <form class="d-flex">
+      <form class="d-flex search-form">
         <input
           class="form-control me-2"
+          id="body-term"
           type="search"
           placeholder="Search"
           aria-label="Search"
@@ -80,4 +81,5 @@
       </form>
     </div>
   </div>
+  <script src="/js/activeClass.js"></script>
 </nav>

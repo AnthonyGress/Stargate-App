@@ -34,16 +34,14 @@ router.get("/signup", (req, res) => {
 
   res.render("signup");
 });
-router.get('/solar-system', async(req, res) =>{
-  var myId = [1,2,3];
-  try{
+router.get("/solar-system", async (req, res) => {
+  try {
     const body = await Bodies.findAll({
-        where:{id:[163,167,166,162,201,164,200,198,199]},
-      
+      where: { id: [163, 167, 166, 162, 201, 164, 200, 198, 199] },
     });
 
     if (!body) {
-      res.status(404).json({ message: 'Where is our galaxy!?!?' });
+      res.status(404).json({ message: "Where is our galaxy!?!?" });
       return;
     }
     // const galaxyData = await Bodies.findAll({ where: { id: myId } });
@@ -51,9 +49,7 @@ router.get('/solar-system', async(req, res) =>{
     // // TODO call helper to pull user info and display it on page
     // res.render("solar-system", { planet, layout: "dashboard.handlebars" });
     res.status(200).json(body);
-
-  }
-  catch(err){
+  } catch (err) {
     res.status(500).json(err);
   }
 });
@@ -89,7 +85,7 @@ router.get('/solar-system', async(req, res) =>{
 //   }
 // });
 
-router.get("/featured", async (req, res) => {
+router.get("/potd", async (req, res) => {
   try {
     const url =
       "https://api.nasa.gov/planetary/apod?api_key=Y0LfWDWXIyVWrPcCEd0fDNayJjsQ8kxHYBz4NtwA";
