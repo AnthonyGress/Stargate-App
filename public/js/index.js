@@ -100,7 +100,7 @@ class BasicWorldDemo {
     const marsSource = "../assets/sphere/mars.jpeg";
     const moonSource = "../assets/sphere/moon_map.jpeg";
 
-    let textureSource = marsSource;
+    let textureSource = earthSource;
 
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(textureSource);
