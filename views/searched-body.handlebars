@@ -11,7 +11,7 @@
                 <header class="ps-4 card-header bg-success text-center fs-2">{{title}}</header>
                 <p class="ps-4 card-body fs-5">{{explanation}} </p>
                 <div class="ps-4 card-body fs-5">
-                    <p>Name:{{name}}</p>
+                    <p>Name: {{name}}</p>
                     {{#if isPlanet}}
                     <p>{{name}} is a planet.</p>
                     {{else}}
@@ -42,7 +42,7 @@
 
 
                     {{#if aroundPlanet}}
-                    <p>{{name}} orbits the planet {{aroundPlanet.planet}}.</p>
+                    <p>{{name}} orbits {{aroundPlanet.planet}}.</p>
                     {{else}}
                     <p>{{name}} doesn't orbit any planets.</p>
                     {{/if}}
