@@ -7,7 +7,6 @@ import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/j
 import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js";
 
 const modelDiv = document.querySelector("#canvas");
-
 class BasicWorldDemo {
   constructor() {
     this._Initialize();
@@ -99,65 +98,56 @@ class BasicWorldDemo {
     // const earthSource = "../assets/sphere/earth_atmos_4096.jpeg";
     // const marsSource = "../assets/sphere/mars.jpeg";
     // const moonSource = "../assets/sphere/moon_map.jpeg";
+
     let bodyTexture;
 
-    const textureSetter = (body) => {
-      switch (body) {
-        case earth:
-          bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
-          location.reload();
-          break;
-        case mars:
-          bodyTexture = "../assets/sphere/mars.jpeg";
-          location.reload();
-          break;
-        case moon:
-          bodyTexture = "../assets/sphere/moon_map.jpeg";
-          location.reload();
-          break;
-        case mercury:
-          bodyTexture = "../assets/sphere/mercury.jpg";
-          location.reload();
-          break;
-        case venus:
-          bodyTexture = "../assets/sphere/venus.jpg";
-          location.reload();
-          break;
-        case jupiter:
-          bodyTexture = "../assets/sphere/jupiter.jpg";
-          location.reload();
-          break;
-        case saturn:
-          bodyTexture = "../assets/sphere/saturn.jpg";
-          location.reload();
-          break;
-        case uranus:
-          bodyTexture = "../assets/sphere/uranus.jpg";
-          location.reload();
-          break;
-        case neptune:
-          bodyTexture = "../assets/sphere/neptune.jpg";
-          location.reload();
-          break;
-        case pluto:
-          bodyTexture = "../assets/sphere/pluto.jpg";
-          location.reload();
-          break;
-        case sun:
-          bodyTexture = "../assets/sphere/sun.jpeg";
-          location.reload();
-          break;
-        case moon:
-          bodyTexture = "../assets/sphere/moon.jpeg";
-          location.reload();
-          break;
-        default:
-          bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
-          location.reload();
-          break;
-      }
-    };
+    // switch (x) {
+    //   case "mars":
+    //     bodyTexture = "../assets/sphere/mars.jpeg";
+    //     break;
+    //   case "moon":
+    //     bodyTexture = "../assets/sphere/moon_map.jpeg";
+
+    //     break;
+    //   case "mercury":
+    //     bodyTexture = "../assets/sphere/mercury.jpg";
+
+    //     break;
+    //   case "venus":
+    //     bodyTexture = "../assets/sphere/venus.jpg";
+
+    //     break;
+    //   case "jupiter":
+    //     bodyTexture = "../assets/sphere/jupiter.jpg";
+
+    //     break;
+    //   case "saturn":
+    //     bodyTexture = "../assets/sphere/saturn.jpg";
+
+    //     break;
+    //   case "uranus":
+    //     bodyTexture = "../assets/sphere/uranus.jpg";
+    //     break;
+    //   case "neptune":
+    //     bodyTexture = "../assets/sphere/neptune.jpg";
+    //     break;
+    //   case "pluto":
+    //     bodyTexture = "../assets/sphere/pluto.jpg";
+    //     break;
+    //   case "sun":
+    //     bodyTexture = "../assets/sphere/sun.jpeg";
+    //     break;
+    //   case "moon":
+    //     bodyTexture = "../assets/sphere/moon.jpeg";
+    //     break;
+    //   default:
+    //     bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
+    //     break;
+    // }
+
     let textureSource = bodyTexture;
+    // console.log(bodyTexture);
+    textureSource = "../assets/sphere/earth_atmos_4096.jpeg";
 
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(textureSource);
@@ -228,10 +218,61 @@ let _APP = null;
 
 window.addEventListener("DOMContentLoaded", () => {
   _APP = new BasicWorldDemo();
-});
 
-const selectBody = (event) => {
-  textureSetter(event.target.dataset.id);
-};
-const dropdown = document.querySelector(".dropdown-menu");
-dropdown.addEventListener("click", selectBody);
+  const selectBody = (event) => {
+    console.log(event.target.dataset.id);
+    x = "event.target.dataset.id";
+    // location.reload();
+  };
+  const dropdown = document.querySelector(".dropdown-menu");
+  dropdown.addEventListener("click", selectBody);
+
+  // const textureSetter = (body) => {
+  //   let bodyTexture;
+  //   switch (body) {
+  //     case "mars":
+  //       bodyTexture = "../assets/sphere/mars.jpeg";
+  //       return bodyTexture;
+  //     case "moon":
+  //       bodyTexture = "../assets/sphere/moon_map.jpeg";
+
+  //       return bodyTexture;
+  //     case "mercury":
+  //       bodyTexture = "../assets/sphere/mercury.jpg";
+
+  //       return bodyTexture;
+  //     case "venus":
+  //       bodyTexture = "../assets/sphere/venus.jpg";
+
+  //       return bodyTexture;
+  //     case "jupiter":
+  //       bodyTexture = "../assets/sphere/jupiter.jpg";
+
+  //       return bodyTexture;
+  //     case "saturn":
+  //       bodyTexture = "../assets/sphere/saturn.jpg";
+
+  //       return bodyTexture;
+  //     case "uranus":
+  //       bodyTexture = "../assets/sphere/uranus.jpg";
+
+  //       return bodyTexture;
+  //     case "neptune":
+  //       bodyTexture = "../assets/sphere/neptune.jpg";
+
+  //       return bodyTexture;
+  //     case "pluto":
+  //       bodyTexture = "../assets/sphere/pluto.jpg";
+
+  //       return bodyTexture;
+  //     case "sun":
+  //       bodyTexture = "../assets/sphere/sun.jpeg";
+
+  //       return bodyTexture;
+  //     case "moon":
+  //       bodyTexture = "../assets/sphere/moon.jpeg";
+
+  //       return bodyTexture;
+  //   }
+  // };
+});
