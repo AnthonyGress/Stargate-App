@@ -96,11 +96,69 @@ class BasicWorldDemo {
     // SkyboxMesh.rotation.x = (Math.PI / 180) * 63;
     // skybox_group.add(SkyboxMesh);
 
-    const earthSource = "../assets/sphere/earth_atmos_4096.jpeg";
-    const marsSource = "../assets/sphere/mars.jpeg";
-    const moonSource = "../assets/sphere/moon_map.jpeg";
+    // const earthSource = "../assets/sphere/earth_atmos_4096.jpeg";
+    // const marsSource = "../assets/sphere/mars.jpeg";
+    // const moonSource = "../assets/sphere/moon_map.jpeg";
+    let bodyTexture;
 
-    let textureSource = earthSource;
+    
+    const textureSetter =  (body) =>{
+      switch (body) {
+        case earth:
+          bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
+          location.reload();
+          break;
+        case mars:
+          bodyTexture = "../assets/sphere/mars.jpeg";
+          location.reload();
+          break;
+        case moon:
+          bodyTexture = "../assets/sphere/moon_map.jpeg";
+          location.reload();
+          break;
+        case mercury:
+          bodyTexture = "../assets/sphere/mercury.jpg";
+          location.reload();
+          break;
+        case venus:
+          bodyTexture = "../assets/sphere/venus.jpg";
+          location.reload();
+          break;
+        case jupiter:
+          bodyTexture = "../assets/sphere/jupiter.jpg";
+          location.reload();
+          break;
+        case saturn:
+          bodyTexture = "../assets/sphere/saturn.jpg";
+          location.reload();
+          break;
+        case uranus:
+          bodyTexture = "../assets/sphere/uranus.jpg";
+          location.reload();
+        break;
+        case neptune:
+          bodyTexture = "../assets/sphere/neptune.jpg";
+          location.reload();
+          break;
+        case pluto:
+          bodyTexture = "../assets/sphere/pluto.jpg";
+          location.reload();
+          break;
+        case sun:
+          bodyTexture ="../assets/sphere/sun.jpeg";
+          location.reload();
+          break;
+        case moon:
+          bodyTexture ="../assets/sphere/moon.jpeg";
+          location.reload();
+          break;
+        default:
+          bodyTexture ="../assets/sphere/earth_atmos_4096.jpeg";
+          location.reload();
+          break;
+        }
+    }
+    let textureSource = bodyTexture;
 
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(textureSource);
