@@ -101,53 +101,53 @@ class BasicWorldDemo {
 
     let bodyTexture;
 
-    // switch (x) {
-    //   case "mars":
-    //     bodyTexture = "../assets/sphere/mars.jpeg";
-    //     break;
-    //   case "moon":
-    //     bodyTexture = "../assets/sphere/moon_map.jpeg";
+    switch ("earth") {
+      case "mars":
+        bodyTexture = "../assets/sphere/mars.jpeg";
+        break;
+      case "moon":
+        bodyTexture = "../assets/sphere/moon_map.jpeg";
 
-    //     break;
-    //   case "mercury":
-    //     bodyTexture = "../assets/sphere/mercury.jpg";
+        break;
+      case "mercury":
+        bodyTexture = "../assets/sphere/mercury.jpg";
 
-    //     break;
-    //   case "venus":
-    //     bodyTexture = "../assets/sphere/venus.jpg";
+        break;
+      case "venus":
+        bodyTexture = "../assets/sphere/venus.jpg";
 
-    //     break;
-    //   case "jupiter":
-    //     bodyTexture = "../assets/sphere/jupiter.jpg";
+        break;
+      case "jupiter":
+        bodyTexture = "../assets/sphere/jupiter.jpg";
 
-    //     break;
-    //   case "saturn":
-    //     bodyTexture = "../assets/sphere/saturn.jpg";
+        break;
+      case "saturn":
+        bodyTexture = "../assets/sphere/saturn.jpg";
 
-    //     break;
-    //   case "uranus":
-    //     bodyTexture = "../assets/sphere/uranus.jpg";
-    //     break;
-    //   case "neptune":
-    //     bodyTexture = "../assets/sphere/neptune.jpg";
-    //     break;
-    //   case "pluto":
-    //     bodyTexture = "../assets/sphere/pluto.jpg";
-    //     break;
-    //   case "sun":
-    //     bodyTexture = "../assets/sphere/sun.jpeg";
-    //     break;
-    //   case "moon":
-    //     bodyTexture = "../assets/sphere/moon.jpeg";
-    //     break;
-    //   default:
-    //     bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
-    //     break;
-    // }
+        break;
+      case "uranus":
+        bodyTexture = "../assets/sphere/uranus.jpg";
+        break;
+      case "neptune":
+        bodyTexture = "../assets/sphere/neptune.jpg";
+        break;
+      case "pluto":
+        bodyTexture = "../assets/sphere/pluto.jpg";
+        break;
+      case "sun":
+        bodyTexture = "../assets/sphere/sun_atmos.jpeg";
+        break;
+      case "moon":
+        bodyTexture = "../assets/sphere/moon.jpeg";
+        break;
+      default:
+        bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
+        break;
+    }
 
     let textureSource = bodyTexture;
     // console.log(bodyTexture);
-    textureSource = "../assets/sphere/earth_atmos_4096.jpeg";
+    // textureSource = "../assets/sphere/earth_atmos_4096.jpeg";
 
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(textureSource);
