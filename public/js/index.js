@@ -101,8 +101,7 @@ class BasicWorldDemo {
     // const moonSource = "../assets/sphere/moon_map.jpeg";
     let bodyTexture;
 
-    
-    const textureSetter =  (body) =>{
+    const textureSetter = (body) => {
       switch (body) {
         case earth:
           bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
@@ -135,7 +134,7 @@ class BasicWorldDemo {
         case uranus:
           bodyTexture = "../assets/sphere/uranus.jpg";
           location.reload();
-        break;
+          break;
         case neptune:
           bodyTexture = "../assets/sphere/neptune.jpg";
           location.reload();
@@ -145,19 +144,19 @@ class BasicWorldDemo {
           location.reload();
           break;
         case sun:
-          bodyTexture ="../assets/sphere/sun.jpeg";
+          bodyTexture = "../assets/sphere/sun.jpeg";
           location.reload();
           break;
         case moon:
-          bodyTexture ="../assets/sphere/moon.jpeg";
+          bodyTexture = "../assets/sphere/moon.jpeg";
           location.reload();
           break;
         default:
-          bodyTexture ="../assets/sphere/earth_atmos_4096.jpeg";
+          bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
           location.reload();
           break;
-        }
-    }
+      }
+    };
     let textureSource = bodyTexture;
 
     const textureLoader = new THREE.TextureLoader();
@@ -230,3 +229,9 @@ let _APP = null;
 window.addEventListener("DOMContentLoaded", () => {
   _APP = new BasicWorldDemo();
 });
+
+const selectBody = (event) => {
+  textureSetter(event.target.dataset.id);
+};
+const dropdown = document.querySelector(".dropdown-menu");
+dropdown.addEventListener("click", selectBody);
