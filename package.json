@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/index.js",
-    "build": "node seeds/index.js"
+    "build": "node seeds/index.js",
+    "pwa": "create-pwa --icon=\"./Stargate512Logo.png\" --launch=\"./launch.jpeg\""
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
   },
   "homepage": "https://github.com/DaytimeDracula/Backup-Planit#readme",
   "devDependencies": {
-    "@types/dat.gui": "^0.7.7"
+    "@types/dat.gui": "^0.7.7",
+    "create-pwa": "^2.3.1"
   }
 }
