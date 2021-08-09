@@ -8,7 +8,7 @@
 
 A full stack web app that provides a fun and interactive way to learn about celestial bodies!
 
-This application's structure follows the Model-View-Controller paradigm. It uses **_Handlebars.js_** for managing Views, **_MySQL2_** and **_Sequelize_** to connect to a MySQL database for the Models, and **_Express.js_** for the Controllers.
+This application's structure follows the Model-View-Controller paradigm. It uses **_Handlebars.js_** for managing Views, **_MySQL2_** and **_Sequelize_** to connect to a MySQL database for the Models, and **_Express.js_** for the Controllers. **_Three.js_** was used to render the 3D graphics.
 
 It also utilizes **_dotenv_** for environment variables, **_bcrypt_** - to hash passwords, and **_express-session/connect-session-sequelize_** for authentication.
 
