@@ -9,7 +9,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://stargate-app.herokuapp.com/",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
