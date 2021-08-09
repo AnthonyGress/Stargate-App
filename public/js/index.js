@@ -69,7 +69,8 @@ class BasicWorldDemo {
     this.orbitControls.autoRotate = true;
     this.orbitControls.autoRotateSpeed = 0.8;
     // this.orbitControls.dampingFactor = 0.05;
-    this.orbitControls.rotateSpeed = 0.15;
+    this.orbitControls.rotateSpeed = 0.25;
+    this.orbitControls.zoomSpeed = 0.35;
 
     this.orbitControls.update();
 
