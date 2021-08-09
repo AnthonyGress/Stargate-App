@@ -9,10 +9,11 @@ router.get("/:name", async (req, res) => {
       },
     });
 
-    if (!body) {
-      res.status(404).json({ message: "No space body found with this name!" });
-      return;
-    }
+    // if (!body) {
+    //   res.render("404")
+    //   res.status(404).json({ message: "No space body found with this name!" });
+    //   return;
+    // }
 
     const myBody = body.get({ plain: true });
     res.render("searched-body", {
@@ -20,8 +21,12 @@ router.get("/:name", async (req, res) => {
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
-    res.status(500).json(err);
+    res.status(500).render("404blank", {layout:"404.handlebars",loggedIn: req.session.loggedIn});
   }
 });
+
+module.exports = router;
+
+
 
 module.exports = router;
