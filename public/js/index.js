@@ -98,10 +98,12 @@ class BasicWorldDemo {
     // const earthSource = "../assets/sphere/earth_atmos_4096.jpeg";
     // const marsSource = "../assets/sphere/mars.jpeg";
     // const moonSource = "../assets/sphere/moon_map.jpeg";
-
+    let urlSelection = window.location.href.toString().split("/").pop();
+    let selection = urlSelection.split("#").pop();
+    console.log(selection);
     let bodyTexture;
 
-    switch ("earth") {
+    switch (selection) {
       case "mars":
         bodyTexture = "../assets/sphere/mars.jpeg";
         break;
@@ -219,13 +221,13 @@ let _APP = null;
 window.addEventListener("DOMContentLoaded", () => {
   _APP = new BasicWorldDemo();
 
-  const selectBody = (event) => {
-    console.log(event.target.dataset.id);
-    x = "event.target.dataset.id";
-    // location.reload();
+  const refresh = (event) => {
+    // console.log(event.target.dataset.id);
+    // x = "event.target.dataset.id";
+    location.reload();
   };
   const dropdown = document.querySelector(".dropdown-menu");
-  dropdown.addEventListener("click", selectBody);
+  dropdown.addEventListener("click", () => setTimeout(refresh, 10));
 
   // const textureSetter = (body) => {
   //   let bodyTexture;
