@@ -3,7 +3,7 @@
   "dir": "ltr",
   "name": "Stargate",
   "short_name": "Stargate",
-  "description": "",
+  "description": "A fun and interactive way to explore the solar system and learn about different celestial bodies!",
   "theme_color": "#000",
   "background_color": "#000",
   "display": "standalone",
