@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-<div style="display: flex; justify-content: center;"><img width="710" alt="Screen Shot 2021-08-03 at 1 44 50 PM" src="./public/assets/launch.jpeg"></div>
+<div alight="center"><img width="710" alt="Screen Shot 2021-08-03 at 1 44 50 PM" src="./public/assets/launch.jpeg"></div>
 
 ## Description
 
