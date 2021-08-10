@@ -1,8 +1,8 @@
-# Backup PlanIt by Aero Functions [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Stargate App by Aero Functions [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Screenshot (current progress)
+## Screenshot
 
-<img width="710" alt="Screen Shot 2021-08-03 at 1 44 50 PM" src="./public/assets/screenshot.png">
+<div align="center"><img width="710" alt="Screen Shot 2021-08-03 at 1 44 50 PM" src="./public/assets/launch.jpeg"></div>
 
 ## Description
 
