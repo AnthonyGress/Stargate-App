@@ -62,3 +62,5 @@ npm test
 Please feel free to collaborate with me on this project! Just fork it and submit a well documented pull request.
 
 If you have any questions, please contact me at techx@opayq.com
+
+**This app is strictly for educational purposes only**
