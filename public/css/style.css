@@ -110,9 +110,6 @@ canvas {
   width: 100%;
   background-color: #171616;
   z-index: 1;
-  padding-top: env(safe-area-inset-top, 0);
-  padding-left: env(safe-area-inset-left, 0);
-  padding-right: env(safe-area-inset-right, 0);
 }
 
 @media screen and (min-width: 1024px) {
@@ -130,14 +127,10 @@ canvas {
   .dropdown-item {
     font-size: 1.3rem;
   }
-}
-
-@media screen and (max-width: 968px) {
-  .navbar-brand {
-    font-size: 1.4rem;
-  }
-  .nav-item,
-  .dropdown-item {
-    font-size: 1.3rem;
+  .navbar {
+    padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
   }
 }
