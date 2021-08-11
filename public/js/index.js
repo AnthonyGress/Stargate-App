@@ -80,10 +80,10 @@ class BasicWorldDemo {
     this.orbitControls.maxDistance = 50;
     this.orbitControls.enablePan = false;
     this.orbitControls.enableDamping = true;
-    this.orbitControls.autoRotate = false;
-    this.orbitControls.autoRotateSpeed = 0.8;
+    this.orbitControls.autoRotate = true;
+    this.orbitControls.autoRotateSpeed = 1;
     // this.orbitControls.dampingFactor = 0.05;
-    this.orbitControls.rotateSpeed = 0.25;
+    this.orbitControls.rotateSpeed = 0.4;
     this.orbitControls.zoomSpeed = 0.35;
 
     this.orbitControls.update();
