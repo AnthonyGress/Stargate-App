@@ -117,6 +117,9 @@ canvas {
 }
 
 @media screen and (max-width: 968px) {
+  .body-wrapper {
+    padding-top: env(safe-area-inset-top, 0);
+  }
   .navbar-brand {
     font-size: 1.4rem;
   }
