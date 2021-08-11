@@ -36,7 +36,9 @@ class BasicWorldDemo {
     const near = 1.0;
     const far = 800.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+    // default zoom
     this._camera.position.set(0, 0, 32);
+    // zoom out if mobile
     if (screen.width < 968) {
       this._camera.position.set(0, 0, 44);
     }
@@ -78,7 +80,7 @@ class BasicWorldDemo {
     this.orbitControls.zoomSpeed = 0.35;
 
     this.orbitControls.update();
-    //create skybox
+    //create cube skybox
     // const bgLoader = new THREE.CubeTextureLoader();
     // const bgTexture = bgLoader.load([
     //   "../assets/skybox-bg/space_bk.png",
@@ -89,6 +91,8 @@ class BasicWorldDemo {
     //   "../assets/skybox-bg/space_up.png",
     // ]);
     // this._scene.background = bgTexture;
+
+    //create sphere skybox
     const bgTextureSource = "../assets/skyBox/eso_dark.jpeg";
     const bgLoader = new THREE.TextureLoader();
     const bgTexture = bgLoader.load(bgTextureSource);
@@ -97,12 +101,14 @@ class BasicWorldDemo {
 
     const bgMaterial = new THREE.MeshBasicMaterial({
       map: bgTexture,
+      // view inside the sphere
       side: THREE.BackSide,
     });
     const bgSphere = new THREE.Mesh(bgGeometry, bgMaterial);
     this._scene.bgSphere = bgSphere;
     this._scene.add(bgSphere);
 
+    // manipulate url to determine which model texture to load
     let urlSelection = window.location.href.toString().split("/").pop();
     let selection = urlSelection.split("#").pop();
     let bodyTexture;
@@ -180,7 +186,7 @@ class BasicWorldDemo {
     this._scene.add(sphere);
 
     this._RAF();
-
+    // particles
     // this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf", -22, -42);
     // this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
     //this._LoadModel("../assets/stargate/stargate.glb", 0.5, 0.5, 0.5);
