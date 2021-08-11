@@ -80,7 +80,7 @@ a:hover {
 }
 
 canvas {
-  /* max-height: 90vh; */
+  max-height: 100vh;
   overflow: hidden;
   outline: none;
   z-index: -1;
