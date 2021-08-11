@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/index.js",
-    "build": "node seeds/index.js",
+    "herokubuild": "node seeds/index.js",
     "pwa": "create-pwa --icon=\"./Stargate512LogoTrans.png\" --launch=\"./launch.jpeg\""
   },
   "repository": {
