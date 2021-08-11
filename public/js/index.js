@@ -125,39 +125,36 @@ class BasicWorldDemo {
         bodyTexture = "../assets/sphere/mars.jpeg";
         break;
       case "moon":
-        bodyTexture = "../assets/sphere/moon_map.jpeg";
+        bodyTexture = "../assets/sphere/moon.jpeg";
 
         break;
       case "mercury":
-        bodyTexture = "../assets/sphere/mercury.jpg";
+        bodyTexture = "../assets/sphere/mercury.jpeg";
 
         break;
       case "venus":
-        bodyTexture = "../assets/sphere/venus.jpg";
+        bodyTexture = "../assets/sphere/venus.jpeg";
 
         break;
       case "jupiter":
-        bodyTexture = "../assets/sphere/jupiter.jpg";
+        bodyTexture = "../assets/sphere/jupiter.jpeg";
 
         break;
       case "saturn":
-        bodyTexture = "../assets/sphere/saturn.jpg";
+        bodyTexture = "../assets/sphere/saturn.jpeg";
 
         break;
       case "uranus":
-        bodyTexture = "../assets/sphere/uranus.jpg";
+        bodyTexture = "../assets/sphere/uranus.jpeg";
         break;
       case "neptune":
-        bodyTexture = "../assets/sphere/neptune.jpg";
+        bodyTexture = "../assets/sphere/neptune.jpeg";
         break;
       case "pluto":
-        bodyTexture = "../assets/sphere/pluto.jpg";
+        bodyTexture = "../assets/sphere/pluto.jpeg";
         break;
       case "sun":
-        bodyTexture = "../assets/sphere/sun_atmos.jpeg";
-        break;
-      case "moon":
-        bodyTexture = "../assets/sphere/moon.jpeg";
+        bodyTexture = "../assets/sphere/sun.jpeg";
         break;
       default:
         bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
