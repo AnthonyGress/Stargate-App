@@ -21,6 +21,7 @@ a:hover {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  max-height: 60vh;
 }
 
 .bg-secondary {
@@ -119,6 +120,11 @@ canvas {
   .nav-item,
   .navbar-brand {
     font-size: 1.3rem;
+  }
+
+  .apod {
+    width: auto !important;
+    max-height: 85vh;
   }
 }
 
