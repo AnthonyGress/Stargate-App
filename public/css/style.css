@@ -7,15 +7,60 @@ body {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
-  /* background-image: url("./resources/background.jpg"); */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 a,
 a:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.apod {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.bg-secondary {
+  background-color: #535960 !important;
+}
+
+#body-term {
+  border-color: #535960;
+}
+
+#body-term:active,
+#body-term:hover,
+#body-term:focus {
+  box-shadow: none !important;
+  /* outline: 0px !important; */
+}
+
+.btn-secondary {
+  background-color: #5c5cc9;
+  border-color: #5c5cc9;
+}
+
+.btn-secondary:focus,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:active:focus:not(:disabled):not(.disabled) {
+  background-color: #47479b;
+  border-color: #47479b !important;
+}
+
+.card-title {
+  min-width: 100% !important;
+  background-color: #5c5cc9 !important;
+  border-radius: 0 0 6px 6px;
+  padding: 10px;
+}
+
+.dropdown-menu li :hover {
+  background-color: #5c5cc9 !important;
+  border-radius: 6px;
 }
 
 .body-wrapper {
@@ -34,8 +79,7 @@ a:hover {
 }
 
 canvas {
-  /* max-height: 90vh; */
-  margin-left: 0rem;
+  max-height: 90vh;
   overflow: hidden;
   outline: none;
   z-index: -1;
