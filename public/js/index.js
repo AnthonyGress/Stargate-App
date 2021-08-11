@@ -76,8 +76,8 @@ class BasicWorldDemo {
     const controls = new OrbitControls(this._camera, this._threejs.domElement);
     controls.target.set(0, 0, 0);
     this.orbitControls = controls;
-    this.orbitControls.minDistance = 15;
-    this.orbitControls.maxDistance = 200;
+    this.orbitControls.minDistance = 45;
+    this.orbitControls.maxDistance = 150;
     this.orbitControls.enablePan = false;
     this.orbitControls.enableDamping = true;
     this.orbitControls.autoRotate = true;
