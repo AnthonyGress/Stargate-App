@@ -237,5 +237,5 @@ window.addEventListener("DOMContentLoaded", () => {
     location.reload();
   };
   const dropdown = document.querySelector(".dropdown-menu");
-  dropdown.addEventListener("click", () => setTimeout(refresh, 10));
+  dropdown.addEventListener("click", () => setTimeout(refresh, 1));
 });
