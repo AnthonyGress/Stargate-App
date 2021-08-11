@@ -80,14 +80,15 @@ a:hover {
 }
 
 canvas {
-  max-height: 90vh;
+  max-height: 91vh;
   overflow: hidden;
   outline: none;
   z-index: -1;
 }
 
 .nav-item,
-.navbar-brand {
+.navbar-brand,
+.dropdown-item {
   font-size: 1.2rem;
 }
 
@@ -104,6 +105,16 @@ canvas {
 @media screen and (min-width: 1024px) {
   .nav-item,
   .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .nav-item,
+  .dropdown-item {
     font-size: 1.3rem;
   }
 }

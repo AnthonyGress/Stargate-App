@@ -36,7 +36,10 @@ class BasicWorldDemo {
     const near = 1.0;
     const far = 800.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-    this._camera.position.set(0, 20, 15);
+    this._camera.position.set(0, 0, 32);
+    if (screen.width < 968) {
+      this._camera.position.set(0, 0, 44);
+    }
     this._camera.aspect = window.innerWidth / window.innerHeight;
     this._camera.updateProjectionMatrix();
     this._scene = new THREE.Scene();
@@ -75,37 +78,33 @@ class BasicWorldDemo {
     this.orbitControls.zoomSpeed = 0.35;
 
     this.orbitControls.update();
+    //create skybox
+    // const bgLoader = new THREE.CubeTextureLoader();
+    // const bgTexture = bgLoader.load([
+    //   "../assets/skybox-bg/space_bk.png",
+    //   "../assets/skybox-bg/space_dn.png",
+    //   "../assets/skybox-bg/space_ft.png",
+    //   "../assets/skybox-bg/space_lf.png",
+    //   "../assets/skybox-bg/space_rt.png",
+    //   "../assets/skybox-bg/space_up.png",
+    // ]);
+    // this._scene.background = bgTexture;
+    const bgTextureSource = "../assets/skyBox/eso_dark.jpeg";
+    const bgLoader = new THREE.TextureLoader();
+    const bgTexture = bgLoader.load(bgTextureSource);
 
-    const bgLoader = new THREE.CubeTextureLoader();
-    const bgTexture = bgLoader.load([
-      "../assets/skyBox/skyBackground.png",
-      "../assets/skyBox/skyBackground.png",
-      "../assets/skyBox/skyBackground.png",
-      "../assets/skyBox/skyBackground.png",
-      "../assets/skyBox/skyBackground.png",
-      "../assets/skyBox/skyBackground.png",
-    ]);
-    this._scene.background = bgTexture;
+    const bgGeometry = new THREE.SphereGeometry(200, 32, 20);
 
-    // const skybox_group = new THREE.Object3D();
-    // scene.add(skybox_group);
-    // const SkyboxMesh = CreateSphere(
-    //   "./textures/eso_dark.jpg",
-    //   1e8,
-    //   50,
-    //   "Skybox",
-    //   true
-    // );
-    // SkyboxMesh.material.side = THREE.BackSide;
-    // SkyboxMesh.rotation.x = (Math.PI / 180) * 63;
-    // skybox_group.add(SkyboxMesh);
+    const bgMaterial = new THREE.MeshBasicMaterial({
+      map: bgTexture,
+      side: THREE.BackSide,
+    });
+    const bgSphere = new THREE.Mesh(bgGeometry, bgMaterial);
+    this._scene.bgSphere = bgSphere;
+    this._scene.add(bgSphere);
 
-    // const earthSource = "../assets/sphere/earth_atmos_4096.jpeg";
-    // const marsSource = "../assets/sphere/mars.jpeg";
-    // const moonSource = "../assets/sphere/moon_map.jpeg";
     let urlSelection = window.location.href.toString().split("/").pop();
     let selection = urlSelection.split("#").pop();
-    console.log(selection);
     let bodyTexture;
 
     switch (selection) {
@@ -153,13 +152,11 @@ class BasicWorldDemo {
     }
 
     let textureSource = bodyTexture;
-    // console.log(bodyTexture);
-    // textureSource = "../assets/sphere/earth_atmos_4096.jpeg";
 
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(textureSource);
 
-    const geometry = new THREE.SphereGeometry(9, 20, 20);
+    const geometry = new THREE.SphereGeometry(10, 32, 32);
 
     const material = new THREE.MeshBasicMaterial({
       map: texture,
@@ -184,7 +181,7 @@ class BasicWorldDemo {
 
     this._RAF();
 
-    this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf", -22, -42, -10);
+    // this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf", -22, -42);
     // this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
     //this._LoadModel("../assets/stargate/stargate.glb", 0.5, 0.5, 0.5);
     // this._tick();
@@ -212,13 +209,6 @@ class BasicWorldDemo {
       this._RAF();
     });
   }
-
-  // _tick(){
-  //   const elapsedTime = clock.getElapsedTime();
-  //   this._LoadModel.rotation.y = .5*elapsedTime;
-  //   render.render(this._scene,this._camera);
-  //   window.requestAnimationFrame(this._tick);
-  // }
 }
 
 let _APP = null;
@@ -227,59 +217,8 @@ window.addEventListener("DOMContentLoaded", () => {
   _APP = new BasicWorldDemo();
 
   const refresh = (event) => {
-    // console.log(event.target.dataset.id);
-    // x = "event.target.dataset.id";
     location.reload();
   };
   const dropdown = document.querySelector(".dropdown-menu");
   dropdown.addEventListener("click", () => setTimeout(refresh, 10));
-
-  // const textureSetter = (body) => {
-  //   let bodyTexture;
-  //   switch (body) {
-  //     case "mars":
-  //       bodyTexture = "../assets/sphere/mars.jpeg";
-  //       return bodyTexture;
-  //     case "moon":
-  //       bodyTexture = "../assets/sphere/moon_map.jpeg";
-
-  //       return bodyTexture;
-  //     case "mercury":
-  //       bodyTexture = "../assets/sphere/mercury.jpg";
-
-  //       return bodyTexture;
-  //     case "venus":
-  //       bodyTexture = "../assets/sphere/venus.jpg";
-
-  //       return bodyTexture;
-  //     case "jupiter":
-  //       bodyTexture = "../assets/sphere/jupiter.jpg";
-
-  //       return bodyTexture;
-  //     case "saturn":
-  //       bodyTexture = "../assets/sphere/saturn.jpg";
-
-  //       return bodyTexture;
-  //     case "uranus":
-  //       bodyTexture = "../assets/sphere/uranus.jpg";
-
-  //       return bodyTexture;
-  //     case "neptune":
-  //       bodyTexture = "../assets/sphere/neptune.jpg";
-
-  //       return bodyTexture;
-  //     case "pluto":
-  //       bodyTexture = "../assets/sphere/pluto.jpg";
-
-  //       return bodyTexture;
-  //     case "sun":
-  //       bodyTexture = "../assets/sphere/sun.jpeg";
-
-  //       return bodyTexture;
-  //     case "moon":
-  //       bodyTexture = "../assets/sphere/moon.jpeg";
-
-  //       return bodyTexture;
-  //   }
-  // };
 });
