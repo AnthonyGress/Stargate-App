@@ -47,7 +47,7 @@ class BasicWorldDemo {
     this._camera.position.set(50, 40, 32);
     // zoom out if mobile
     if (screen.width < 500) {
-      this._camera.position.set(50, 40, 58);
+      this._camera.position.set(50, 40, 76);
     }
     this._camera.aspect = window.innerWidth / window.innerHeight;
     this._camera.updateProjectionMatrix();
@@ -76,8 +76,8 @@ class BasicWorldDemo {
     const controls = new OrbitControls(this._camera, this._threejs.domElement);
     controls.target.set(0, 0, 0);
     this.orbitControls = controls;
-    this.orbitControls.minDistance = 45;
-    this.orbitControls.maxDistance = 150;
+    this.orbitControls.minDistance = 50;
+    this.orbitControls.maxDistance = 180;
     this.orbitControls.enablePan = false;
     this.orbitControls.enableDamping = true;
     this.orbitControls.autoRotate = true;
