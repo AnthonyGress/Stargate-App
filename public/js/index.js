@@ -80,7 +80,7 @@ class BasicWorldDemo {
     this.orbitControls.maxDistance = 50;
     this.orbitControls.enablePan = false;
     this.orbitControls.enableDamping = true;
-    this.orbitControls.autoRotate = true;
+    this.orbitControls.autoRotate = false;
     this.orbitControls.autoRotateSpeed = 0.8;
     // this.orbitControls.dampingFactor = 0.05;
     this.orbitControls.rotateSpeed = 0.25;
@@ -104,7 +104,7 @@ class BasicWorldDemo {
     const bgLoader = new THREE.TextureLoader();
     const bgTexture = bgLoader.load(bgTextureSource);
 
-    const bgGeometry = new THREE.SphereGeometry(200, 32, 20);
+    const bgGeometry = new THREE.SphereGeometry(300, 32, 20);
 
     const bgMaterial = new THREE.MeshBasicMaterial({
       map: bgTexture,
