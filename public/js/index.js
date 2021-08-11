@@ -169,7 +169,7 @@ class BasicWorldDemo {
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(textureSource);
 
-    const geometry = new THREE.SphereGeometry(20, 32, 32);
+    const geometry = new THREE.SphereGeometry(24, 32, 32);
 
     const material = new THREE.MeshBasicMaterial({
       map: texture,
