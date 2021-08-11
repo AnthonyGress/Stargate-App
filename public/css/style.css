@@ -80,7 +80,7 @@ a:hover {
 }
 
 canvas {
-  max-height: 90vh;
+  /* max-height: 90vh; */
   overflow: hidden;
   outline: none;
   z-index: -1;
@@ -96,11 +96,13 @@ canvas {
   cursor: pointer;
 }
 
-/* .navbar {
-  position: absolute;
+.navbar {
+  position: fixed;
   left: 0;
   top: 0;
-} */
+  width: 100%;
+  background-color: #171616;
+}
 
 @media screen and (min-width: 1024px) {
   .nav-item,
@@ -111,7 +113,17 @@ canvas {
 
 @media screen and (max-width: 968px) {
   .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .nav-item,
+  .dropdown-item {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .navbar-brand {
+    font-size: 1.4rem;
   }
   .nav-item,
   .dropdown-item {
