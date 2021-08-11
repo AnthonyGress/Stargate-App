@@ -46,7 +46,7 @@ class BasicWorldDemo {
     // default zoom
     this._camera.position.set(0, 0, 32);
     // zoom out if mobile
-    if (screen.width < 968) {
+    if (screen.width < 500) {
       this._camera.position.set(0, 0, 44);
     }
     this._camera.aspect = window.innerWidth / window.innerHeight;
