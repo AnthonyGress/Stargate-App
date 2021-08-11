@@ -17,72 +17,78 @@
         <li class="nav-item">
           <a class="nav-link home" href="/" aria-current="page">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Solar System
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a
-                class="dropdown-item"
-                data-id="earth"
-                href="#earth"
-              >Earth</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="moon"
-                href="#moon"
-              >Moon</a></li>
-            <li><a class="dropdown-item" data-id="sun" href="#sun">Sun</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a
-                class="dropdown-item"
-                data-id="mercury"
-                href="#mercury"
-              >Mercury</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="venus"
-                href="#venus"
-              >Venus</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="mars"
-                href="#mars"
-              >Mars</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="jupiter"
-                href="#jupiter"
-              >Jupiter</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="saturn"
-                href="#saturn"
-              >Saturn</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="uranus"
-                href="#uranus"
-              >Uranus</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="neptune"
-                href="#neptune"
-              >Neptune</a></li>
-            <li><a
-                class="dropdown-item"
-                data-id="pluto"
-                href="#pluto"
-              >Pluto</a></li>
-          </ul>
-        </li>
+        {{#if home}}
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              3d Model
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a
+                  class="dropdown-item"
+                  data-id="earth"
+                  href="#earth"
+                >Earth</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="moon"
+                  href="#moon"
+                >Moon</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="sun"
+                  href="#sun"
+                >Sun</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="mercury"
+                  href="#mercury"
+                >Mercury</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="venus"
+                  href="#venus"
+                >Venus</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="mars"
+                  href="#mars"
+                >Mars</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="jupiter"
+                  href="#jupiter"
+                >Jupiter</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="saturn"
+                  href="#saturn"
+                >Saturn</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="uranus"
+                  href="#uranus"
+                >Uranus</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="neptune"
+                  href="#neptune"
+                >Neptune</a></li>
+              <li><a
+                  class="dropdown-item"
+                  data-id="pluto"
+                  href="#pluto"
+                >Pluto</a></li>
+            </ul>
+          </li>
+        {{/if}}
         <li class="nav-item">
           <a
             class="nav-link stargate"
@@ -90,11 +96,11 @@
           >Portal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link potd" href="/potd">Daily Pic</a>
+          <a class="nav-link potd" href="/potd">Featured</a>
         </li>
-        <li class="nav-item">
+        {{! <li class="nav-item">
           <a class="nav-link dashboard" href="/dashboard">Dashboard</a>
-        </li>
+        </li> }}
 
         {{#if loggedIn}}
           <li class="nav-item" id="logout">

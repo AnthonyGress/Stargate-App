@@ -37,6 +37,8 @@ class BasicWorldDemo {
     const far = 800.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     this._camera.position.set(0, 20, 15);
+    this._camera.aspect = window.innerWidth / window.innerHeight;
+    this._camera.updateProjectionMatrix();
     this._scene = new THREE.Scene();
 
     let light = new THREE.DirectionalLight(0xffffff, 1);

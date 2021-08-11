@@ -34,7 +34,7 @@ a:hover {
 }
 
 canvas {
-  max-height: 90vh;
+  /* max-height: 90vh; */
   margin-left: 0rem;
   overflow: hidden;
   outline: none;
@@ -43,7 +43,7 @@ canvas {
 
 .nav-item,
 .navbar-brand {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .nav-link:hover {
@@ -55,3 +55,10 @@ canvas {
   left: 0;
   top: 0;
 } */
+
+@media screen and (min-width: 1024px) {
+  .nav-item,
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}

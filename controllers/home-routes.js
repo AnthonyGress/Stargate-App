@@ -8,6 +8,7 @@ router.get("/", async (req, res) => {
   try {
     res.render("homepage", {
       loggedIn: req.session.loggedIn,
+      home: true,
     });
   } catch (err) {
     console.log(err);
