@@ -41,13 +41,13 @@ class BasicWorldDemo {
     const fov = 60;
     const aspect = 1920 / 1080;
     const near = 1.0;
-    const far = 800.0;
+    const far = 2000.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     // default zoom
-    this._camera.position.set(0, 0, 32);
+    this._camera.position.set(50, 40, 32);
     // zoom out if mobile
     if (screen.width < 500) {
-      this._camera.position.set(0, 0, 44);
+      this._camera.position.set(50, 40, 58);
     }
     this._camera.aspect = window.innerWidth / window.innerHeight;
     this._camera.updateProjectionMatrix();
@@ -77,14 +77,14 @@ class BasicWorldDemo {
     controls.target.set(0, 0, 0);
     this.orbitControls = controls;
     this.orbitControls.minDistance = 15;
-    this.orbitControls.maxDistance = 50;
+    this.orbitControls.maxDistance = 200;
     this.orbitControls.enablePan = false;
     this.orbitControls.enableDamping = true;
     this.orbitControls.autoRotate = true;
     this.orbitControls.autoRotateSpeed = 1;
     // this.orbitControls.dampingFactor = 0.05;
-    this.orbitControls.rotateSpeed = 0.4;
-    this.orbitControls.zoomSpeed = 0.35;
+    this.orbitControls.rotateSpeed = 0.2;
+    this.orbitControls.zoomSpeed = 0.45;
 
     this.orbitControls.update();
     //create cube skybox
@@ -169,7 +169,7 @@ class BasicWorldDemo {
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(textureSource);
 
-    const geometry = new THREE.SphereGeometry(10, 32, 32);
+    const geometry = new THREE.SphereGeometry(20, 32, 32);
 
     const material = new THREE.MeshBasicMaterial({
       map: texture,
