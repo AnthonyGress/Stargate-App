@@ -8,11 +8,18 @@
         width="35"
         height="35"
       />
-    </a>
-    {{!-- <ul class="navbar-nav me-auto mb-lg-0 modelDropdown">
-      {{> modelDropdown}}
-    </ul> --}}
-    <button
+    </a>        
+    {{#if home}}
+    <div class="dropdown modelDropdown">
+  <div class="nav-item dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    3D Model
+  </div>
+  <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+    {{> modelDropdown}}
+  </ul>
+</div>
+    {{/if}}
+    {{!-- <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -20,17 +27,24 @@
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
+    > --}}
+    <button class="hamburger hamburger--spin" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+      {{!-- <span class="navbar-toggler-icon"></span> --}}
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link home" href="/" aria-current="page">Home</a>
         </li>
-        {{#if home}}
-          {{> modelDropdown}}
-        {{/if}}
+
         <li class="nav-item">
           <a
             class="nav-link stargate"
@@ -72,4 +86,5 @@
     </div>
   </div>
   <script src="/js/activeClass.js"></script>
+  <script src="/js/animateHamburger.js"></script>
 </nav>
