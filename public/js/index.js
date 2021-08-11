@@ -20,11 +20,18 @@ class BasicWorldDemo {
     this._threejs.shadowMap.type = THREE.PCFSoftShadowMap;
     this._threejs.setPixelRatio(window.devicePixelRatio);
     this._threejs.setSize(window.innerWidth, window.innerHeight);
-    //TODO make this canvas a child of model so we can manipulate it inside of the div #model
+
     modelDiv.appendChild(this._threejs.domElement);
 
     window.addEventListener(
       "resize",
+      () => {
+        this._OnWindowResize();
+      },
+      false
+    );
+    window.addEventListener(
+      "orientationchange",
       () => {
         this._OnWindowResize();
       },
