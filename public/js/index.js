@@ -34,7 +34,11 @@ class BasicWorldDemo {
       "orientationchange",
       () => {
         this._OnWindowResize();
-        this._camera.position.set(50, 40, 32);
+        if (screen.width < 500) {
+          this._camera.position.set(50, 40, 76);
+        } else {
+          this._camera.position.set(50, 40, 32);
+        }
         this._camera.updateProjectionMatrix();
       },
       false
@@ -46,10 +50,11 @@ class BasicWorldDemo {
     const far = 2000.0;
     this._camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
     // default zoom
-    this._camera.position.set(50, 40, 32);
     // zoom out if mobile
     if (screen.width < 500) {
       this._camera.position.set(50, 40, 76);
+    } else {
+      this._camera.position.set(50, 40, 32);
     }
     this._camera.aspect = window.innerWidth / window.innerHeight;
     this._camera.updateProjectionMatrix();
