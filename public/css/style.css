@@ -91,6 +91,10 @@ canvas {
   margin-bottom: 2rem;
 }
 
+.modelDropdown {
+  background-color: transparent !important;
+}
+
 .nav-item,
 .navbar-brand,
 .dropdown-item {
