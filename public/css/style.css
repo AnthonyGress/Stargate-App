@@ -28,7 +28,8 @@ a:hover {
 }
 
 #body-term {
-  border-color: #535960;
+  /* border-color: #535960; */
+  border-color: #5c5cc9;
 }
 
 #body-term:active,
@@ -127,6 +128,15 @@ canvas {
   .dropdown-item {
     font-size: 1.3rem;
   }
+
+  .navbar-brand {
+    padding-top: 0.6rem;
+  }
+
+  .navbar-toggler {
+    margin-top: 0.6rem;
+  }
+
   .navbar {
     padding-top: env(safe-area-inset-top, 0);
     padding-left: env(safe-area-inset-left, 0);
