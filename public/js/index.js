@@ -102,7 +102,7 @@ class BasicWorldDemo {
     // this._scene.background = bgTexture;
 
     //create sphere skybox
-    const bgTextureSource = "../assets/skyBox/eso_dark.jpeg";
+    const bgTextureSource = "../assets/skyBox/eso_dark.min.jpeg";
     const bgLoader = new THREE.TextureLoader();
     const bgTexture = bgLoader.load(bgTextureSource);
 
@@ -124,42 +124,42 @@ class BasicWorldDemo {
 
     switch (selection) {
       case "mars":
-        bodyTexture = "../assets/sphere/mars.jpeg";
+        bodyTexture = "../assets/sphere/mars.min.jpeg";
         break;
       case "moon":
-        bodyTexture = "../assets/sphere/moon.jpeg";
+        bodyTexture = "../assets/sphere/moon.min.jpeg";
 
         break;
       case "mercury":
-        bodyTexture = "../assets/sphere/mercury.jpeg";
+        bodyTexture = "../assets/sphere/mercury.min.jpeg";
 
         break;
       case "venus":
-        bodyTexture = "../assets/sphere/venus.jpeg";
+        bodyTexture = "../assets/sphere/venus.min.jpeg";
 
         break;
       case "jupiter":
-        bodyTexture = "../assets/sphere/jupiter.jpeg";
+        bodyTexture = "../assets/sphere/jupiter.min.jpeg";
 
         break;
       case "saturn":
-        bodyTexture = "../assets/sphere/saturn.jpeg";
+        bodyTexture = "../assets/sphere/saturn.min.jpeg";
 
         break;
       case "uranus":
-        bodyTexture = "../assets/sphere/uranus.jpeg";
+        bodyTexture = "../assets/sphere/uranus.min.jpeg";
         break;
       case "neptune":
-        bodyTexture = "../assets/sphere/neptune.jpeg";
+        bodyTexture = "../assets/sphere/neptune.min.jpeg";
         break;
       case "pluto":
-        bodyTexture = "../assets/sphere/pluto.jpeg";
+        bodyTexture = "../assets/sphere/pluto.min.jpeg";
         break;
       case "sun":
-        bodyTexture = "../assets/sphere/sun.jpeg";
+        bodyTexture = "../assets/sphere/sun.min.jpeg";
         break;
       default:
-        bodyTexture = "../assets/sphere/earth_atmos_4096.jpeg";
+        bodyTexture = "../assets/sphere/earth_atmos_4096.min.jpeg";
         break;
     }
 
