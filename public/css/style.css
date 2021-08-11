@@ -8,6 +8,8 @@ body {
   padding: 0;
   overscroll-behavior: none;
   touch-action: manipulation;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 a,
@@ -67,8 +69,6 @@ a:hover {
 .body-wrapper {
   display: block;
   width: 100%;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .newPostBtn {
