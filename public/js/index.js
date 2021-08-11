@@ -34,6 +34,8 @@ class BasicWorldDemo {
       "orientationchange",
       () => {
         this._OnWindowResize();
+        this._camera.position.set(50, 40, 32);
+        this._camera.updateProjectionMatrix();
       },
       false
     );
