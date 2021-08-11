@@ -6,13 +6,20 @@ body {
   max-height: 100vh;
   margin: 0;
   overscroll-behavior: none;
+  /* no double tap zoom mobile */
   touch-action: manipulation;
+  /* no text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 a,
 a:hover {
   text-decoration: none;
   color: inherit;
+  -webkit-user-drag: none;
 }
 
 .img404 {
@@ -107,6 +114,10 @@ canvas {
   font-size: 1.2rem;
 }
 
+.nav-item:hover {
+  cursor: pointer;
+}
+
 .nav-link:hover {
   cursor: pointer;
 }
@@ -147,10 +158,9 @@ canvas {
 
   .modelDropdownWrapper {
     margin-right: 20px;
+    cursor: pointer !important;
   }
-  .modelDropdown {
-    background-color: transparent !important;
-  }
+
   .navbar {
     padding-top: env(safe-area-inset-top, 0);
     padding-left: env(safe-area-inset-left, 0);
