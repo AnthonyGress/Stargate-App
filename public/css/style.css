@@ -145,8 +145,11 @@ canvas {
     font-size: 1.3rem;
   }
 
-  .modelDropdown {
+  .modelDropdownWrapper {
     margin-right: 20px;
+  }
+  .modelDropdown {
+    background-color: transparent !important;
   }
   .navbar {
     padding-top: env(safe-area-inset-top, 0);
@@ -169,6 +172,6 @@ canvas {
 }
 
 /* hamburger animation */
-.navbar-toggler {
+/* .navbar-toggler {
   border-color: transparent !important;
-}
+} */
