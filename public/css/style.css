@@ -129,14 +129,6 @@ canvas {
     font-size: 1.3rem;
   }
 
-  .navbar-brand {
-    margin-top: 0.7rem;
-  }
-
-  .navbar-toggler {
-    margin-top: 0.6rem;
-  }
-
   .navbar {
     padding-top: env(safe-area-inset-top, 0);
     padding-left: env(safe-area-inset-left, 0);
