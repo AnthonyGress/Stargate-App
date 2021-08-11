@@ -8,8 +8,6 @@ body {
   padding: 0;
   overscroll-behavior: none;
   touch-action: manipulation;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 a,
@@ -110,6 +108,8 @@ canvas {
   width: 100%;
   background-color: #171616;
   z-index: 1;
+  padding: env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left) env(safe-area-inset-top);
 }
 
 @media screen and (min-width: 1024px) {
