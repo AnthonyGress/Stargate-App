@@ -240,6 +240,6 @@ window.addEventListener("DOMContentLoaded", () => {
     location.reload();
   };
   const dropdown = document.querySelector(".dropdown-menu");
-  dropdown.addEventListener("click", () => setTimeout(refresh, 3));
+  dropdown.addEventListener("click", () => setTimeout(refresh, 1));
   // dropdown.addEventListener("click", refresh);
 });
