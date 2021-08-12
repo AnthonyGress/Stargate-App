@@ -66,41 +66,41 @@ self.addEventListener("install", (event) => {
 });
 
 // use network first then cache
-// self.addEventListener("fetch", function (event) {
-//   event.respondWith(
-//     fetch(event.request).catch(function () {
-//       return caches.match(event.request);
-//     })
-//   );
-// });
-
-self.addEventListener("fetch", (event) => {
+self.addEventListener("fetch", function (event) {
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      if (response) {
-        return response;
-      }
-
-      const fetchRequest = event.request.clone();
-
-      return fetch(fetchRequest).then((response) => {
-        if (!response || response.status !== 200 || response.type !== "basic") {
-          return response;
-        }
-
-        const responseToCache = response.clone();
-
-        event.waitUntil(
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
-          })
-        );
-
-        return response;
-      });
+    fetch(event.request).catch(function () {
+      return caches.match(event.request);
     })
   );
 });
+
+// self.addEventListener("fetch", (event) => {
+//   event.respondWith(
+//     caches.match(event.request).then((response) => {
+//       if (response) {
+//         return response;
+//       }
+
+//       const fetchRequest = event.request.clone();
+
+//       return fetch(fetchRequest).then((response) => {
+//         if (!response || response.status !== 200 || response.type !== "basic") {
+//           return response;
+//         }
+
+//         const responseToCache = response.clone();
+
+//         event.waitUntil(
+//           caches.open(CACHE_NAME).then((cache) => {
+//             cache.put(event.request, responseToCache);
+//           })
+//         );
+
+//         return response;
+//       });
+//     })
+//   );
+// });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
