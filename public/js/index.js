@@ -163,6 +163,9 @@ class BasicWorldDemo {
       case "sun":
         bodyTexture = "../assets/sphere/sun.min.jpeg";
         break;
+      case "earth":
+        bodyTexture = "../assets/sphere/earth_atmos_4096.min.jpeg";
+        break;
       default:
         bodyTexture = "../assets/sphere/earth_atmos_4096.min.jpeg";
         break;
@@ -238,4 +241,5 @@ window.addEventListener("DOMContentLoaded", () => {
   };
   const dropdown = document.querySelector(".dropdown-menu");
   dropdown.addEventListener("click", () => setTimeout(refresh, 1));
+  // dropdown.addEventListener("click", refresh);
 });
