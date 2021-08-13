@@ -2,7 +2,8 @@
 
 ## Screenshot
 
-<div align="center"><img width="710" alt="Screen Shot 2021-08-03 at 1 44 50 PM" src="./public/assets/launch.jpeg"></div>
+<div align="center"><img width="1917" alt="Stargate screenshot" src="https://user-images.githubusercontent.com/70029654/129402066-f0e4ba5b-355b-4c95-b077-ad30e95dd7dc.png">
+</div>
 
 ## Description
 
