@@ -54,7 +54,7 @@ const urlsToCache = [
   "/assets/sphere/uranus.min.jpeg",
   "/assets/sphere/venus.min.jpeg",
   "/assets/skyBox/eso_dark.min.jpeg",
-  "/assets/blackhole.png",
+  "/assets/blackhole.min.jpeg",
 ];
 
 self.addEventListener("install", (event) => {
