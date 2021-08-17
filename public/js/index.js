@@ -60,10 +60,10 @@ class BasicWorldDemo {
     this._camera.updateProjectionMatrix();
     this._scene = new THREE.Scene();
 
-    let light = new THREE.DirectionalLight(0xffffff, 1);
-    light.position.set(200, 100, 400);
+    let light = new THREE.DirectionalLight(0xffffff, .8);
+    light.position.set(200, 300, 400);
     light.target.position.set(0, 0, 0);
-    light.castShadow = true;
+    // light.castShadow = true;
     light.shadow.bias = -0.001;
     light.shadow.mapSize.width = 2048;
     light.shadow.mapSize.height = 2048;
@@ -77,7 +77,23 @@ class BasicWorldDemo {
     light.shadow.camera.bottom = -100;
     this._scene.add(light);
 
-    light = new THREE.AmbientLight(0x101010);
+    // let light2 = new THREE.DirectionalLight(0xffffff, .9);
+    // light2.position.set(-100, -200, -300);
+    // light2.target.position.set(0, -50, 0);
+    // light2.shadow.bias = -0.001;
+    // light2.shadow.mapSize.width = 2048;
+    // light2.shadow.mapSize.height = 2048;
+    // light2.shadow.camera.near = 0.1;
+    // light2.shadow.camera.far = 500.0;
+    // light2.shadow.camera.near = 0.5;
+    // light2.shadow.camera.far = 500.0;
+    // light2.shadow.camera.left = 100;
+    // light2.shadow.camera.right = -100;
+    // light2.shadow.camera.top = 100;
+    // light2.shadow.camera.bottom = -100;
+    // this._scene.add(light2);
+
+    light = new THREE.AmbientLight(0x404040);
     this._scene.add(light);
 
     const controls = new OrbitControls(this._camera, this._threejs.domElement);
@@ -127,6 +143,29 @@ class BasicWorldDemo {
     let selection = urlSelection.split("#").pop();
     let bodyTexture;
 
+//     const fbxLoader = new FBXLoader()
+// fbxLoader.load(
+//     '../assets/sphere/saturn-planet/source/Saturn_LP.fbx',
+//     (object) => {
+//         // object.traverse(function (child) {
+//         //     if ((child as THREE.Mesh).isMesh) {
+//         //         // (child as THREE.Mesh).material = material
+//         //         if ((child as THREE.Mesh).material) {
+//         //             ((child as THREE.Mesh).material as THREE.MeshBasicMaterial).transparent = false
+//         //         }
+//         //     }
+//         // })
+//         // object.scale.set(.01, .01, .01)
+//         this._scene.add(object)
+//     },
+//     (xhr) => {
+//         console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+//     },
+//     (error) => {
+//         console.log(error)
+//     }
+// )
+
     switch (selection) {
       case "mars":
         bodyTexture = "../assets/sphere/mars.min.jpeg";
@@ -148,8 +187,8 @@ class BasicWorldDemo {
 
         break;
       case "saturn":
-        bodyTexture = "../assets/sphere/saturn.min.jpeg";
-
+        this._LoadModel("../assets/sphere/Saturn.glb", 0, 8, 0);
+        // bodyTexture = "../assets/sphere/saturn.min.jpeg";
         break;
       case "uranus":
         bodyTexture = "../assets/sphere/uranus.min.jpeg";
@@ -172,47 +211,56 @@ class BasicWorldDemo {
     }
 
     let textureSource = bodyTexture;
-
+    let texture;
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load(textureSource);
 
-    const geometry = new THREE.SphereGeometry(24, 32, 32);
-
-    const material = new THREE.MeshBasicMaterial({
-      map: texture,
-    });
-    // material.metalness = 0.6;
-    material.roughness = 0.5;
-    // material.normalMap = normalTexture;
-    // material.color = new THREE.Color(0xe07b39);
-    // material.transparent = true;
-    // material.opacity = 0.4;
-    material.flatShading = false;
-
-    // combine geometry and material to create object
-    const sphere = new THREE.Mesh(geometry, material);
-    this._scene.sphere = sphere;
-    sphere.castShadow = false;
-    sphere.receiveShadow = true;
-    sphere.rotation.y = -Math.PI / 2;
-    // add sphere to the scene
-
-    this._scene.add(sphere);
+    // if model is not saturn, create sphere and mesh and add it
+    if (textureSource){
+      texture = textureLoader.load(textureSource);
+      const geometry = new THREE.SphereGeometry(24, 32, 32);
+      const material = new THREE.MeshBasicMaterial({
+        map: texture,
+      });
+      // material.metalness = 0.6;
+      material.roughness = 0.5;
+      // material.normalMap = normalTexture;
+      // material.color = new THREE.Color(0xe07b39);
+      // material.transparent = true;
+      // material.opacity = 0.4;
+      material.flatShading = false;
+      // combine geometry and material to create object
+      const sphere = new THREE.Mesh(geometry, material);
+      this._scene.sphere = sphere;
+      sphere.castShadow = false;
+      sphere.receiveShadow = true;
+      sphere.rotation.y = -Math.PI / 2;
+      // add sphere to the scene
+      // this._scene.add(sphere);
+      if (selection !== "saturn") {
+        this._scene.add(sphere);
+      }
+    }
 
     this._RAF();
     // particles
     // this._LoadModel("../assets/Galaxy3DTest/model/scene.gltf", -22, -42);
     // this._LoadModel("../assets/Galaxy3DTest/earthModel/scene.gltf", -2, 3, 0);
-    //this._LoadModel("../assets/stargate/stargate.glb", 0.5, 0.5, 0.5);
+    // this._LoadModel("../assets/sphere/Saturn.glb", 0, 8, 0);
     // this._tick();
+
   }
   _LoadModel(path, x, y, z) {
     const loader = new GLTFLoader();
     loader.load(path, (gltf) => {
       gltf.scene.traverse((c) => {
         //c.castShadow = true;
-        c.position.set(x, y, z);
-      });
+        if ( c.isMesh ) {
+          c.geometry.center(); // center here
+      }
+      c.position.set(x, y, z);
+    });
+    gltf.scene.scale.multiplyScalar(3.5 / 100); // adjust scalar factor to match your scene scale
+      // gltf.scene.scale.set(-10,-10,400) // scale here/
       this._scene.add(gltf.scene);
     });
   }
