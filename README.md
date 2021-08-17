@@ -1,8 +1,9 @@
-# Stargate App by Aero Functions [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Stargate App [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Screenshot
 
-<div align="center"><img width="710" alt="Screen Shot 2021-08-03 at 1 44 50 PM" src="./public/assets/launch.jpeg"></div>
+<a href="https://stargate-app.herokuapp.com/" target="_blank"><div align="center"><img width="1917" alt="Stargate screenshot" src="https://user-images.githubusercontent.com/70029654/129402066-f0e4ba5b-355b-4c95-b077-ad30e95dd7dc.png">
+</div></a>
 
 ## Description
 
@@ -35,7 +36,7 @@ npm i
 
 ## Usage
 
-This site is live at heroku link!
+This site is live at [Stargate App](https://stargate-app.herokuapp.com/)
 
 To use this node app and create your own local server, clone the repo down, use the terminal to cd into the root directory. Then run:
 
