@@ -35,25 +35,10 @@ function search_body(event) {
   };
   getPlanet(url);
 }
-// hide model dropdown on hamburger open
 
+// hide model dropdown on hamburger open
 const hideModelDropdown = () => {
-  // if (modelToggle.classList.contains("fade-in")){
-  //   modelToggle.classList.remove("fade-in");
-  // }
-  // else {
-  //   modelToggle.classList.add("fade-in");  }
-  // bs invisible
-  modelToggle.classList.toggle("invisible");
-  // fade anim
-  // if (hamburgerToggle.classList.contains("collapsed")){
-  //   modelToggle.classList.remove("fade-out");
-  //   modelToggle.classList.add("fade-in");
-  // }
-  // else {
-  //   modelToggle.classList.remove("fade-in")
-  //   modelToggle.classList.add("fade-out")
-  // }
+  modelToggle.classList.toggle("hidden");
 }
 
 

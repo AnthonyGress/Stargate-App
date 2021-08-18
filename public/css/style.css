@@ -159,6 +159,8 @@ canvas {
   .modelDropdownWrapper {
     margin-right: 20px;
     cursor: pointer !important;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
   }
 
   .navbar {
@@ -167,6 +169,10 @@ canvas {
     padding-right: env(safe-area-inset-right, 0);
     padding-bottom: 0;
   }
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .fade-in {
