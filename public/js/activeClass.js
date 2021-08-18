@@ -5,8 +5,6 @@ const login = document.querySelector(".login");
 const potd = document.querySelector(".potd");
 const dashboard = document.querySelector(".dashboard");
 const searchForm = document.querySelector(".search-form");
-const hamburgerToggle = document.querySelector(".hamburger");
-const modelToggle = document.querySelector(".modelDropdownWrapper");
 
 let currentUrl = window.location.href.toString().split("/").pop();
 
@@ -36,11 +34,4 @@ function search_body(event) {
   getPlanet(url);
 }
 
-// hide model dropdown on hamburger open
-const hideModelDropdown = () => {
-  modelToggle.classList.toggle("hidden");
-}
-
-
 searchForm.addEventListener("submit", search_body);
-hamburgerToggle.addEventListener("click", hideModelDropdown);
