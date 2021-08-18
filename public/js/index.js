@@ -209,7 +209,7 @@ class BasicWorldDemo {
       case "saturn":
         this._LoadModel("../assets/sphere/Saturn.glb", 0, 5, 0);
         if (screen.width < 500) {
-          this._camera.position.set(50, 30, 90);
+          this._camera.position.set(50, 70, 90);
         } else {
           this._camera.position.set(50, 38, 30);
         }
