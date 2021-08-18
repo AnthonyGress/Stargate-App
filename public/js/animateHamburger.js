@@ -19,7 +19,7 @@ const handleAnimation = () => {
 window.addEventListener(
   "resize",
   () => {
-    if (screen.width > 991) {
+    if (screen.width > 991 && toggler.classList.includes("hidden")) {
       toggler.click();
     }
   },
