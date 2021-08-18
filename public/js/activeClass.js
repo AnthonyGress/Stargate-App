@@ -33,16 +33,5 @@ function search_body(event) {
   };
   getPlanet(url);
 }
-window.addEventListener(
-  "resize",
-  () => {
-    console.log("resizing");
-    if (screen.width > 991) {
-      const modelToggle = document.querySelector(".modelDropdownWrapper");
-      modelToggle.classList.remove("hidden");
-    }
-  },
-  true
-);
 
 searchForm.addEventListener("submit", search_body);
