@@ -13,6 +13,10 @@ const urlsToCache = [
   "/css/hamburgers.css",
   "/css/style.css",
   "/js/activeClass.js",
+  "/js/three.min.js",
+  "/js/OrbitControls.js",
+  "/js/GLTFLoader.js",
+  "/js/swhook.js",
   "/js/animateHamburger.js",
   "/js/index.js",
   "/icons/icon-72x72.png",
@@ -55,6 +59,7 @@ const urlsToCache = [
   "/assets/sphere/venus.min.jpeg",
   "/assets/skyBox/eso_dark.min.jpeg",
   "/assets/blackhole.min.jpeg",
+  "/assets/sphere/Saturn.glb",
 ];
 
 self.addEventListener("install", (event) => {
