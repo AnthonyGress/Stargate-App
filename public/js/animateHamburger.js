@@ -3,10 +3,10 @@ const modelToggle = document.querySelector(".modelDropdownWrapper");
 
 const handleAnimation = () => {
   toggler.classList.toggle("is-active");
+  modelToggle.classList.toggle("hidden");
   // disable hamburger
   toggler.setAttribute("disabled", "true");
   toggler.setAttribute("data-bs-toggle", "");
-
   // after 1.5 sec enable the button again to prevent unwanted animation/data mismatch
   setTimeout(() => {
     // re enable button
@@ -18,16 +18,10 @@ const handleAnimation = () => {
 window.addEventListener(
   "resize",
   () => {
-    if (screen.width > 991 && modelToggle.classList.includes("hidden")) {
+    if (screen.width > 991 && modelToggle.classList.contains("hidden")) {
       toggler.click();
     }
   },
   false
 );
-
-if (toggler.classList.includes("is-active")) {
-  modelToggle.classList.add("hidden");
-} else {
-  modelToggle.classList.remove("hidden");
-}
 toggler.addEventListener("click", handleAnimation);
