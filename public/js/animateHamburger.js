@@ -25,7 +25,7 @@ window.addEventListener(
   false
 );
 
-if (toggler.classList.includes("show")) {
+if (toggler.classList.includes("is-active")) {
   modelToggle.classList.add("hidden");
 } else {
   modelToggle.classList.remove("hidden");
