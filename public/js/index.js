@@ -1,10 +1,12 @@
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js";
+// import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js";
+// import * as THREE from "/three.min.js";
 
-import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js";
 
-import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js";
+// import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.118/examples/jsm/controls/OrbitControls.js";
 
-import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js";
+// import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/FBXLoader.js";
+
+// import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js";
 
 const modelDiv = document.querySelector("#canvas");
 class BasicWorldDemo {
@@ -35,7 +37,7 @@ class BasicWorldDemo {
       () => {
         this._OnWindowResize();
         if (screen.width < 500) {
-          this._camera.position.set(50, 40, 76);
+          this._camera.position.set(50, 20, 86);
         } else {
           this._camera.position.set(50, 40, 32);
         }
@@ -52,9 +54,9 @@ class BasicWorldDemo {
     // default zoom
     // zoom out if mobile
     if (screen.width < 500) {
-      this._camera.position.set(50, 40, 76);
+      this._camera.position.set(50, 20, 86);
     } else {
-      this._camera.position.set(50, 40, 32);
+      this._camera.position.set(50, 20, 40);
     }
     this._camera.aspect = window.innerWidth / window.innerHeight;
     this._camera.updateProjectionMatrix();
@@ -96,14 +98,14 @@ class BasicWorldDemo {
     light = new THREE.AmbientLight(0x404040);
     this._scene.add(light);
 
-    const controls = new OrbitControls(this._camera, this._threejs.domElement);
-    controls.target.set(0, 0, 0);
+    const controls = new THREE.OrbitControls(this._camera, this._threejs.domElement);
     this.orbitControls = controls;
+    this.orbitControls.target.set(0, 0, 0);
     this.orbitControls.minDistance = 50;
     this.orbitControls.maxDistance = 180;
     this.orbitControls.enablePan = false;
     this.orbitControls.enableDamping = true;
-    this.orbitControls.autoRotate = true;
+    this.orbitControls.autoRotate = false;
     this.orbitControls.autoRotateSpeed = 1;
     // this.orbitControls.dampingFactor = 0.05;
     this.orbitControls.rotateSpeed = 0.2;
@@ -165,6 +167,24 @@ class BasicWorldDemo {
 //         console.log(error)
 //     }
 // )
+// const glbLoader = (path, x, y, z) => {
+//   const loader = new THREE.GLTFLoader();
+//   loader.load(path, (gltf) => {
+//     gltf.scene.traverse((c) => {
+//       //c.castShadow = true;
+//       if ( c.isMesh ) {
+//         c.geometry.center(); // center here
+//     }
+//     c.position.set(x, y, z);
+//   });
+//   gltf.scene.scale.multiplyScalar(3.5 / 100); // adjust scalar factor to match your scene scale
+//     // gltf.scene.scale.set(-10,-10,400) // scale here/
+//     this._scene.model = gltf.scene;
+//     this._RAF(gltf.scene)
+//     this._scene.add(this._scene.model);
+//     gltf.scene.position.y -= 10;
+//   });
+// }
 
     switch (selection) {
       case "mars":
@@ -187,7 +207,15 @@ class BasicWorldDemo {
 
         break;
       case "saturn":
-        this._LoadModel("../assets/sphere/Saturn.glb", 0, 8, 0);
+        this._LoadModel("../assets/sphere/Saturn.glb", 0, 5, 0);
+        if (screen.width < 500) {
+          this._camera.position.set(50, 30, 90);
+        } else {
+          this._camera.position.set(50, 38, 30);
+        }
+        
+        this._camera.aspect = window.innerWidth / window.innerHeight;
+        this._camera.updateProjectionMatrix();
         // bodyTexture = "../assets/sphere/saturn.min.jpeg";
         break;
       case "uranus":
@@ -209,13 +237,15 @@ class BasicWorldDemo {
         bodyTexture = "../assets/sphere/earth_atmos_4096.min.jpeg";
         break;
     }
-
+    //TODO clean this mess up
     let textureSource = bodyTexture;
     let texture;
     const textureLoader = new THREE.TextureLoader();
 
+
     // if model is not saturn, create sphere and mesh and add it
     if (textureSource){
+  
       texture = textureLoader.load(textureSource);
       const geometry = new THREE.SphereGeometry(24, 32, 32);
       const material = new THREE.MeshBasicMaterial({
@@ -237,6 +267,7 @@ class BasicWorldDemo {
       // add sphere to the scene
       // this._scene.add(sphere);
       if (selection !== "saturn") {
+        sphere.position.y = -2;
         this._scene.add(sphere);
       }
     }
@@ -250,7 +281,7 @@ class BasicWorldDemo {
 
   }
   _LoadModel(path, x, y, z) {
-    const loader = new GLTFLoader();
+    const loader = new THREE.GLTFLoader();
     loader.load(path, (gltf) => {
       gltf.scene.traverse((c) => {
         //c.castShadow = true;
@@ -261,7 +292,10 @@ class BasicWorldDemo {
     });
     gltf.scene.scale.multiplyScalar(3.5 / 100); // adjust scalar factor to match your scene scale
       // gltf.scene.scale.set(-10,-10,400) // scale here/
-      this._scene.add(gltf.scene);
+      this._scene.model = gltf.scene;
+      this._RAF(this._scene.model)
+      this._scene.add(this._scene.model);
+
     });
   }
   _OnWindowResize() {
@@ -273,7 +307,11 @@ class BasicWorldDemo {
   _RAF() {
     requestAnimationFrame(() => {
       this._threejs.render(this._scene, this._camera);
-      this.orbitControls.update();
+      this.orbitControls.update();   
+      // this._scene.sphere ? this._scene.sphere.rotation.y += .003 : console.log("saturn");
+      if (this._scene.sphere){
+        this._scene.sphere.rotation.y += .003
+      } 
       this._RAF();
     });
   }
