@@ -3,7 +3,6 @@ const modelToggle = document.querySelector(".modelDropdownWrapper");
 
 const handleAnimation = () => {
   toggler.classList.toggle("is-active");
-  modelToggle.classList.toggle("hidden");
   // disable hamburger
   toggler.setAttribute("disabled", "true");
   toggler.setAttribute("data-bs-toggle", "");
@@ -25,4 +24,10 @@ window.addEventListener(
   },
   false
 );
+
+if (toggler.classList.includes("show")) {
+  modelToggle.classList.add("hidden");
+} else {
+  modelToggle.classList.remove("hidden");
+}
 toggler.addEventListener("click", handleAnimation);
