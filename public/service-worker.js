@@ -5,6 +5,7 @@ const urlsToCache = [
   "/dashboard",
   "/signup",
   "/login",
+  "/manifest.json",
   "/css/bootstrap-5.0.2-dist/css/bootstrap.min.css",
   "/css/bootstrap-5.0.2-dist/css/bootstrap-icons.css",
   "/css/bootstrap-5.0.2-dist/css/bootstrap-icons.woff",

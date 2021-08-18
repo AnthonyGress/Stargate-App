@@ -229,6 +229,15 @@ class BasicWorldDemo {
         break;
       case "sun":
         bodyTexture = "../assets/sphere/sun.min.jpeg";
+        // this._LoadModel("../assets/sphere/sun.glb", 0, 5, 0);
+        // if (screen.width < 500) {
+        //   this._camera.position.set(50, 70, 90);
+        // } else {
+        //   this._camera.position.set(50, 38, 30);
+        // }
+        
+        this._camera.aspect = window.innerWidth / window.innerHeight;
+        this._camera.updateProjectionMatrix();
         break;
       case "earth":
         bodyTexture = "../assets/sphere/earth_atmos_4096.min.jpeg";
@@ -290,7 +299,10 @@ class BasicWorldDemo {
       }
       c.position.set(x, y, z);
     });
-    gltf.scene.scale.multiplyScalar(3.5 / 100); // adjust scalar factor to match your scene scale
+    if (path === "../assets/sphere/Saturn.glb"){
+
+      gltf.scene.scale.multiplyScalar(3.5 / 100); // adjust scalar factor to match your scene scale
+    }
       // gltf.scene.scale.set(-10,-10,400) // scale here/
       this._scene.model = gltf.scene;
       this._RAF(this._scene.model)
@@ -327,5 +339,6 @@ window.addEventListener("DOMContentLoaded", () => {
   };
   const dropdown = document.querySelector(".dropdown-menu");
   dropdown.addEventListener("click", () => setTimeout(refresh, 1));
+  // TODO run check on url
   // dropdown.addEventListener("click", refresh);
 });
