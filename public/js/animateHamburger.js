@@ -16,4 +16,13 @@ const handleAnimation = () => {
   }, 500);
 };
 
+window.addEventListener(
+  "resize",
+  () => {
+    if (screen.width > 991) {
+      toggler.click();
+    }
+  },
+  false
+);
 toggler.addEventListener("click", handleAnimation);
