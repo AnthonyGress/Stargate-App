@@ -1,9 +1,12 @@
 const toggler = document.querySelector(".hamburger");
 const modelToggle = document.querySelector(".modelDropdownWrapper");
+// let currentUrl = window.location.href.toString().split("/").pop();
 
 const handleAnimation = () => {
   toggler.classList.toggle("is-active");
-  modelToggle.classList.toggle("hidden");
+  if (currentUrl === "" || currentUrl.includes("#")) {
+    modelToggle.classList.toggle("hidden");
+  }
   // disable hamburger
   toggler.setAttribute("disabled", "true");
   toggler.setAttribute("data-bs-toggle", "");
@@ -18,8 +21,10 @@ const handleAnimation = () => {
 window.addEventListener(
   "resize",
   () => {
-    if (screen.width > 991 && modelToggle.classList.contains("hidden")) {
-      toggler.click();
+    if (modelToggle) {
+      if (screen.width > 991 && modelToggle.classList.contains("hidden")) {
+        toggler.click();
+      }
     }
   },
   false

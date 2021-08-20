@@ -91,21 +91,16 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // handle runtime GET requests for data from /api routes
-  // if (event.request.url.includes("/api/images")) {
-  //   // make network request and fallback to cache if network request fails (offline)
-  //   event.respondWith(
-  //     caches.open(RUNTIME_CACHE).then(cache => {
-  //       return fetch(event.request)
-  //         .then(response => {
-  //           cache.put(event.request, response.clone());
-  //           return response;
-  //         })
-  //         .catch(() => caches.match(event.request));
-  //     })
-  //   );
-  //   return;
-  // }
+  // handle runtime GET requests for data from /potd route
+  if (event.request.url.includes("/potd")) {
+    // make network request and fallback to cache if network request fails (offline)
+    event.respondWith(
+      fetch(event.request).catch(function () {
+        return caches.match(event.request);
+      })
+    );
+    return;
+  }
 
   // use cache first for all other requests for performance
   event.respondWith(
@@ -125,35 +120,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
-//old
-// self.addEventListener("fetch", (event) => {
-//   event.respondWith(
-//     caches.match(event.request).then((response) => {
-//       if (response) {
-//         return response;
-//       }
-
-//       const fetchRequest = event.request.clone();
-
-//       return fetch(fetchRequest).then((response) => {
-//         if (!response || response.status !== 200 || response.type !== "basic") {
-//           return response;
-//         }
-
-//         const responseToCache = response.clone();
-
-//         event.waitUntil(
-//           caches.open(CACHE_NAME).then((cache) => {
-//             cache.put(event.request, responseToCache);
-//           })
-//         );
-
-//         return response;
-//       });
-//     })
-//   );
-// });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
