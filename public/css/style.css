@@ -55,9 +55,12 @@ a:hover {
   /* outline: 0px !important; */
 }
 
-.btn-secondary,
-.bg-secondary {
+.card-header {
   background-color: #5c5cc9 !important;
+}
+
+.btn-secondary {
+  background-color: #5c5cc9;
   border-color: #5c5cc9;
 }
 
