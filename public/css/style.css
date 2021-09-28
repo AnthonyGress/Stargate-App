@@ -27,7 +27,7 @@ a:hover {
   top: 20%;
   max-height: 80vh !important;
   width: auto;
-  padding-top: 5rem;
+  margin-top: 5rem;
 }
 
 .apod {
@@ -95,10 +95,10 @@ a:hover {
   border-radius: 50%;
 }
 
-/* .bi,
+.bi,
 .btn-labeled {
   font-size: 1.5rem !important;
-} */
+}
 
 canvas {
   max-height: 100vh;
