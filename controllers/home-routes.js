@@ -91,9 +91,16 @@ router.get("/potd", async (req, res) => {
     const url =
       "https://api.nasa.gov/planetary/apod?api_key=Y0LfWDWXIyVWrPcCEd0fDNayJjsQ8kxHYBz4NtwA";
     const apod = await get_request(url);
+    const mediaType = await apod.media_type;
+    console.log(apod);
+    console.log(mediaType);
+    let isVideo;
+
+    mediaType === "video" ? (isVideo = true) : (isVideo = false);
     res.render("featured", {
       ...apod,
       loggedIn: req.session.loggedIn,
+      isVideo: isVideo,
     });
   } catch (err) {
     console.log(err);

@@ -3,4 +3,10 @@ const format_date = (date) => {
   return date.toLocaleDateString();
 };
 
-module.exports = { format_date };
+const checkVideo = (mediaType) => {
+  let isVideo;
+  mediaType === "video" ? (isVideo = true) : (isVideo = false);
+  return isVideo;
+};
+
+module.exports = { format_date, checkVideo };

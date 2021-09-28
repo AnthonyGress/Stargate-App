@@ -55,8 +55,9 @@ a:hover {
   /* outline: 0px !important; */
 }
 
-.btn-secondary {
-  background-color: #5c5cc9;
+.btn-secondary,
+.bg-secondary {
+  background-color: #5c5cc9 !important;
   border-color: #5c5cc9;
 }
 
@@ -91,10 +92,10 @@ a:hover {
   border-radius: 50%;
 }
 
-.bi,
+/* .bi,
 .btn-labeled {
   font-size: 1.5rem !important;
-}
+} */
 
 canvas {
   max-height: 100vh;
@@ -163,12 +164,18 @@ canvas {
     opacity: 1;
   }
 
-  .navbar {
+  .navbar,
+  header {
     padding-top: env(safe-area-inset-top, 0);
     padding-left: env(safe-area-inset-left, 0);
     padding-right: env(safe-area-inset-right, 0);
     padding-bottom: 0;
   }
+}
+
+.search-heading {
+  margin-top: 4rem !important;
+  border-radius: 4px;
 }
 
 .hidden {
@@ -178,23 +185,31 @@ canvas {
 .fade-in {
   opacity: 0;
   animation-fill-mode: forwards;
-  animation: fadein 2s .2s 1 normal forwards;
+  animation: fadein 2s 0.2s 1 normal forwards;
 }
 
 .fade-out {
   opacity: 1;
   animation-fill-mode: forwards;
-  animation: fadeout 2s .2s 1 normal forwards;
+  animation: fadeout 2s 0.2s 1 normal forwards;
 }
 
 @keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeout {
-  100% {opacity: 1;}
-  0% {opacity: 0;}
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
 }
 /* mobile landscape */
 @media screen and (max-width: 968px) and (max-height: 450px) {

@@ -1,87 +1,100 @@
 <section class="container">
-    <h2 class="header text-center">A bit about {{name}}</h2>
-    <div class="container">
-        <div class="flex-row row justify-content-center">
-            <div id="planet-model"></div>
-        </div>
+  <div class="container">
+    <div class="flex-row row justify-content-center">
+      <div id="planet-model"></div>
     </div>
-    <section class="flex-row row justify-content-center">
-        <section class="col-lg">
-            <div class="card my-4 bg-dark">
-                <header class="ps-4 card-header bg-success text-center fs-2">{{title}}</header>
-                <p class="ps-4 card-body fs-5">{{explanation}} </p>
-                <div class="ps-4 card-body fs-5">
-                    <p>Name: {{name}}</p>
-                    {{#if isPlanet}}
-                    <p>{{name}} is a planet.</p>
-                    {{else}}
-                    <p>{{name}} is not a planet.</p>
-                    {{/if}}
+  </div>
+  <header
+    class="ps-4 card-header bg-secondary text-center fs-2 mt-5 search-heading"
+  >{{name}}</header>
+  <section class="flex-row row justify-content-center">
+    <section class="col-lg">
+      <div class="card my-4 bg-dark">
+        <p class="ps-4 card-body fs-5">{{explanation}} </p>
+        <div class="ps-4 card-body fs-5">
+          <p>Name: {{name}}</p>
+          {{#if isPlanet}}
+            <p>{{name}} is a planet.</p>
+          {{else}}
+            <p>{{name}} is not a planet.</p>
+          {{/if}}
 
+          {{#if moons}}
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle btn-success"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Moons of
+                {{name}}:
 
-                    {{#if moons}}
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle btn-success" type="button"
-                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Moons of {{name}}:
-
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            {{#each moons}}
-                            <li><a class="dropdown-item" href="/api/body/{{moon}}">{{moon}}</a></li>
-                            {{/each}}
-                        </ul>
-                    </div>
-
-
-                    {{else}}
-                    <p>{{name}} has no moons.</p>
-
-                    {{/if}}
-
-
-
-                    {{#if aroundPlanet}}
-                    <p>{{name}} orbits {{aroundPlanet.planet}}.</p>
-                    {{else}}
-                    <p>{{name}} doesn't orbit any planets.</p>
-                    {{/if}}
-
-
-                    {{#if discoveredBy}}
-                    <p>{{name}} was discovered by {{discoveredBy}} on {{discoveryDate}}</p>
-                    {{else}}
-                    <p>Nobody is credited for the discovery of {{name}}.</p>
-                    {{/if}}
-
-
-
-                    {{#if mass}}
-                    <p>Mass: {{mass.massValue}} x 10<sup>{{mass.massExponent}}</sup> kg</p>
-                    {{/if}}
-
-
-                    {{#if perihelion}}
-                    <p>Perihelion(closest distance from parent body in orbit): {{perihelion}} km</p>
-                    {{/if}}
-
-
-                    {{#if aphelion}}
-                    <p>Aphelion(furthest distance from parent body in orbit): {{aphelion}} km</p>
-                    {{/if}}
-
-
-                    {{#if gravity}}
-                    <p>Gravity:{{gravity}} m/s<sup>2</sup></p>
-                    {{/if}}
-
-
-                    {{#if sideralOrbit}}
-                    <p>Sideral Orbit(orbital period of 360<span>&#176;</span> revolution): {{sideralOrbit}} days</p>
-                    {{/if}}
-
-                </div>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                {{#each moons}}
+                  <li><a
+                      class="dropdown-item"
+                      href="/api/body/{{moon}}"
+                    >{{moon}}</a></li>
+                {{/each}}
+              </ul>
             </div>
-        </section>
+
+          {{else}}
+            <p>{{name}} has no moons.</p>
+
+          {{/if}}
+
+          {{#if aroundPlanet}}
+            <p>{{name}} orbits {{aroundPlanet.planet}}.</p>
+          {{else}}
+            <p>{{name}} doesn't orbit any planets.</p>
+          {{/if}}
+
+          {{#if discoveredBy}}
+            <p>{{name}}
+              was discovered by
+              {{discoveredBy}}
+              on
+              {{discoveryDate}}</p>
+          {{else}}
+            <p>Nobody is credited for the discovery of {{name}}.</p>
+          {{/if}}
+
+          {{#if mass}}
+            <p>Mass:
+              {{mass.massValue}}
+              x 10<sup>{{mass.massExponent}}</sup>
+              kg</p>
+          {{/if}}
+
+          {{#if perihelion}}
+            <p>Perihelion(closest distance from parent body in orbit):
+              {{perihelion}}
+              km</p>
+          {{/if}}
+
+          {{#if aphelion}}
+            <p>Aphelion(furthest distance from parent body in orbit):
+              {{aphelion}}
+              km</p>
+          {{/if}}
+
+          {{#if gravity}}
+            <p>Gravity:{{gravity}} m/s<sup>2</sup></p>
+          {{/if}}
+
+          {{#if sideralOrbit}}
+            <p>Sideral Orbit(orbital period of 360<span>&#176;</span>
+              revolution):
+              {{sideralOrbit}}
+              days</p>
+          {{/if}}
+
+        </div>
+      </div>
     </section>
+  </section>
 </section>
