@@ -31,7 +31,6 @@ To install the npm dependencies cd into the main directory and run:
 
 ```
 npm i
-
 ```
 
 ## Usage
