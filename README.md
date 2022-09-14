@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-<a href="https://stargate-app.herokuapp.com/" target="_blank"><div align="center"><img width="1917" alt="Stargate screenshot" src="https://user-images.githubusercontent.com/70029654/129402066-f0e4ba5b-355b-4c95-b077-ad30e95dd7dc.png">
+<a href="https://stargate.up.railway.app/" target="_blank"><div align="center"><img width="1917" alt="Stargate screenshot" src="https://user-images.githubusercontent.com/70029654/129402066-f0e4ba5b-355b-4c95-b077-ad30e95dd7dc.png">
 </div></a>
 
 ## Description
@@ -35,7 +35,7 @@ npm i
 
 ## Usage
 
-This site is live at [Stargate App](https://stargate-app.herokuapp.com/)
+This site is live at [Stargate App](https://stargate.up.railway.app/)
 
 To use this node app and create your own local server, clone the repo down, use the terminal to cd into the root directory. Then run:
 
