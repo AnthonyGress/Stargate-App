@@ -1,6 +1,6 @@
 {
   "name": "stargate-app",
-  "version": "1.1.2",
+  "version": "1.1.1",
   "description": "An fun and interactive way to learn about the solar system!",
   "main": "server.js",
   "scripts": {
